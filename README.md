@@ -24,4 +24,4 @@ With that said, WordSesh wouldn't be possible without the hard work and help of:
 - [Christopher Cochran](http://twitter.com/tweetsfromchris)
 - [Brad Williams](http://twitter.com/williamsba)
 - [Dre Armeda](http://twitter.com/dremeda)
-- [Maria Scarpella](http://twitter.com/msdesign21)
+- [Maria Scarpello](http://twitter.com/msdesign21)

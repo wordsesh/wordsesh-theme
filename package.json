@@ -1,0 +1,42 @@
+{
+  "name": "wordsesh-theme",
+  "version": "0.1.0",
+  "description": "A theme that makes WordSesh possible.",
+  "author": "WordSesh",
+  "homepage": "https://github.com/wordsesh/wordsesh-theme",
+  "bugs": "https://github.com/wordsesh/wordsesh-theme/issues",
+  "repository"  : {
+    "type": "git",
+    "url": "git://github.com/wordsesh/wordsesh-theme.git"
+  },
+  "licenses": [
+    {
+      "type": "GPL-2.0+",
+      "url": "https://github.com/wordsesh/wordsesh-theme/blob/master/LICENSE"
+    }
+  ],
+  "contributors": "https://github.com/wordsesh/wordsesh-theme/graphs/contributors",
+  "devDependencies": {
+    "css-parse": "~1.5.3",
+    "glob": "~4.0.2",
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "~0.7.6",
+    "grunt-combine-media-queries": "~1.0.15",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-imagemin": "~0.7.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-csscomb": "~3.0.0-1",
+    "grunt-githooks": "~0.3.1",
+    "grunt-shell": "~0.7.0",
+    "grunt-newer": "~0.7.0",
+    "load-grunt-tasks": "~0.5.0",
+    "grunt-update-submodules": "~0.4.1",
+    "grunt-wp-i18n": "~0.4.5"
+  }
+}

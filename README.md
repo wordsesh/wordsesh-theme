@@ -2,6 +2,8 @@ WordSesh Theme
 ==============
 A theme that makes WordSesh possible.
 
+[WordSesh.org](http://wordsesh.org/) automatically pulls from the master branch of this repository.
+
 Welcome to the official WordSesh theme repository! You might think I'm *"just"* a theme but I'm actually more than just that. I'm an open source platform, built by the the [WordPress](http://wordpress.org/) community to power the entire WordSesh event. 
 
 If you'd like to help out, make sure to check out the contributing guidelines [here](https://github.com/wordsesh/wordsesh-theme/blob/master/CONTRIBUTING.md)!

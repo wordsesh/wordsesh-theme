@@ -10,19 +10,30 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					
+					<header class="entry-header">
+					</header><!-- .entry-header -->
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+					<div class="entry-content">
+						<?php the_content(); ?>
+						<?php
+							wp_link_pages( array(
+								'before' => '<div class="page-links">' . __( 'Pages:', 'wordsesh-theme' ),
+								'after'  => '</div>',
+							) );
+						?>
+					</div><!-- .entry-content -->
+
+					<footer class="entry-footer">
+						<?php edit_post_link( __( 'Edit', 'wordsesh-theme' ), '<span class="edit-link">', '</span>' ); ?>
+					</footer><!-- .entry-footer -->
+
+				</article><!-- #post-## -->
 
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

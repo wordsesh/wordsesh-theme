@@ -1041,6 +1041,145 @@ object {
 	max-width: 11.11%;
 }
 
+@font-face {
+	font-family: 'Axis';
+	src: url("fonts/axis.otf");
+}
+
+@font-face {
+	font-family: 'Dense';
+	src: url("fonts/dense.otf");
+}
+
+/* line 12, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php {
+	color: #000;
+	font-family: 'Dense';
+}
+
+/* line 18, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-header {
+	background: url("images/header-bg.png") no-repeat scroll 0 0 transparent;
+	background-size: cover;
+	margin: 0;
+	padding: 0px;
+	max-width: 100%;
+}
+
+/* line 26, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-header-inner {
+	margin: 0 auto;
+	padding: 40px;
+	max-width: 874px;
+}
+
+/* line 32, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .main-navigation {
+	display: none;
+}
+
+/* line 36, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .event-dates {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+/* line 41, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-branding {
+	text-align: center;
+}
+
+/* line 45, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-title,
+.page-template-templatesattending-php .site-title a {
+	color: #fff;
+	font-family: 'Axis';
+	font-size: 120px;
+	line-height: 130px;
+	text-decoration: none;
+}
+
+/* line 53, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-description {
+	color: #fff;
+	font-size: 48px;
+	line-height: 58px;
+}
+
+/* line 59, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .newsletter-signup-form {
+	padding: 0 100px;
+	text-align: center;
+}
+
+/* line 64, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .newsletter-signup-form input[type="text"] {
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+/* line 72, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .content-area {
+	width: 100%;
+	text-align: center;
+}
+
+/* line 77, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .content-area h3 {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+/* line 84, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .attendee-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* line 90, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .attendee-name {
+	font-size: 36px;
+	display: block;
+}
+
+/* line 95, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .attendee-byline {
+	font-size: 28px;
+	display: block;
+}
+
+/* line 101, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-footer {
+	text-align: center;
+}
+
+/* line 105, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-info,
+.page-template-templatesattending-php .site-info a {
+	color: #000;
+	font-size: 28px;
+	text-decoration: none;
+}
+
 /*
  * OPTIONAL BASE STYLES
  */

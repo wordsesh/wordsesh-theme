@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Axis';
+  src: url('fonts/axis.otf');
+}
+
+@font-face {
+  font-family: 'Dense';
+  src: url('fonts/dense.otf');
+}
+
+// Attending Template
+.page-template-templatesattending-php {
+	
+	color: #000;
+	font-family: 'Dense';
+
+	// Header
+	.site-header {
+		background: url('images/header-bg.png') no-repeat scroll 0 0 transparent;
+		background-size: cover;
+		margin: 0;
+		padding: 0px;
+		max-width: 100%
+	}
+
+	.site-header-inner {
+		margin: 0 auto;
+		padding: 40px;
+		max-width: 874px;
+	}
+	
+	.main-navigation {
+		display: none;
+	}
+	
+	.event-dates{
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+	
+	.site-branding {
+		text-align: center;
+	}
+	
+	.site-title, .site-title a {
+		color: #fff;
+		font-family: 'Axis';
+		font-size: 120px;
+		line-height: 130px;
+		text-decoration: none;
+	}
+	
+	.site-description {
+		color: #fff;
+		font-size: 48px;
+		line-height: 58px;
+	}
+	
+	.newsletter-signup-form {
+		
+		padding: 0 100px;
+		text-align: center;
+		
+		input[type="text"] {
+			padding: 10px;
+			text-align: center;
+			width: 100%;
+		}
+	}
+	
+	// Content
+	.content-area {
+		
+		width: 100%;
+		text-align: center;
+		
+		h3 {
+			font-size: 36px;
+			text-transform: uppercase;
+		}
+		
+	}
+	
+	.attendee-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.attendee-name {
+		font-size: 36px;
+		display: block;
+	}
+	
+	.attendee-byline {
+		font-size: 28px;
+		display: block;
+	}
+	
+	// Footer
+	.site-footer {
+		text-align: center;
+	}
+	
+	.site-info, .site-info a {
+		color: #000;
+		font-size: 28px;
+		text-decoration: none;
+	}
+	
+
+}

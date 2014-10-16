@@ -46,10 +46,13 @@ and Blueprint http://www.blueprintcss.org/
 	12.2 - Galleries
 
 --------------------------------------------------------------*/
+
 @import "partials/variables";
 @import "partials/mixins";
 
 @import "partials/reset";
+@import "susy";
+
 @import "partials/typography";
 @import "partials/elements";
 @import "partials/forms";

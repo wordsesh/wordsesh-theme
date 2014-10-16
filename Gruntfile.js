@@ -29,6 +29,7 @@ module.exports = function(grunt) {
 				options: {
 					style: 'expanded',
 					lineNumbers: true,
+					require: 'susy'
 				},
 				files: {
 					'style.css': 'sass/style.scss'

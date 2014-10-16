@@ -9,3 +9,5 @@ output_style     = (environment == :production) ? :compact : :expanded
 sass_options     = {:debug_info=>false}
 line_comments    = true
 preferred_syntax = :scss
+
+require 'susy'

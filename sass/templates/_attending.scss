@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Axis';
+  font-family: 'Axis', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   src: url('fonts/axis.otf');
 }
 
 @font-face {
-  font-family: 'Dense';
+  font-family: 'Dense', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   src: url('fonts/dense.otf');
 }
 
@@ -16,7 +16,7 @@
 
 	// Header
 	.site-header {
-		background: url('images/header-bg.png') no-repeat scroll 0 0 transparent;
+		background: url('images/header-bg.png') no-repeat fixed transparent;
 		background-size: cover;
 		margin: 0;
 		padding: 0px;
@@ -25,7 +25,7 @@
 
 	.site-header-inner {
 		margin: 0 auto;
-		padding: 40px;
+		padding: 40px 40px 100px;
 		max-width: 874px;
 	}
 	
@@ -34,11 +34,12 @@
 	}
 	
 	.event-dates{
-		font-size: 30px;
+		font-size: 38px;
 		text-transform: uppercase;
 	}
 	
 	.site-branding {
+		padding: 80px 0 20px;
 		text-align: center;
 	}
 	
@@ -62,6 +63,8 @@
 		text-align: center;
 		
 		input[type="text"] {
+			line-height: normal;
+			font-size: 18px;
 			padding: 10px;
 			text-align: center;
 			width: 100%;
@@ -79,6 +82,82 @@
 			text-transform: uppercase;
 		}
 		
+	}
+	
+	.entry-content {
+	
+		// Gravity Forms
+		.gform_wrapper { 
+	
+			color: #fff;
+			font-size: 28px;
+		
+			.ginput_container label {
+				font-size: 22px;
+			}
+	
+			input {
+				font-size: 22px;
+				padding: 12px;
+				line-height: 24px;
+			}
+	
+			.gfield_required {
+				color: #fff;
+			}
+			
+			.gform_footer {
+				
+				text-align: center;
+				width: 100%;
+				
+				input[type="submit"] {
+					color: #000;
+					box-shadow: none;
+					border-radius: 0;
+					background: #fff;
+					font-family: "Axis";
+					text-transform: uppercase;
+					line-height: 53px;
+					padding: 6px 30px 0;
+				}
+			}
+			
+			
+			// Validation
+			.validation_error {
+				color: #fff;
+				text-align: center;
+				margin: 0;
+				text-decoration: underline;
+			}
+			
+			.top_label .gfield_error {
+				width: 100%;
+			}
+		}
+		
+		// Confirmtation
+		.gform_confirmation_message {
+			font-size: 32px;
+			color: #fff;
+			text-align: center;
+			padding: 0;
+			line-height: 36px;
+			
+			p:first-child {
+				margin-bottom: 20px;
+			}
+			
+			p {
+				margin-bottom: 0;
+			}
+		}
+		
+	}
+	
+	.edit-link {
+		display: none !important;
 	}
 	
 	.attendee-list {

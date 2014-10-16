@@ -1042,12 +1042,12 @@ object {
 }
 
 @font-face {
-	font-family: 'Axis';
+	font-family: 'Axis', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	src: url("fonts/axis.otf");
 }
 
 @font-face {
-	font-family: 'Dense';
+	font-family: 'Dense', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	src: url("fonts/dense.otf");
 }
 
@@ -1061,7 +1061,7 @@ object {
 /* line 18, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-header {
-	background: url("images/header-bg.png") no-repeat scroll 0 0 transparent;
+	background: url("images/header-bg.png") no-repeat fixed transparent;
 	background-size: cover;
 	margin: 0;
 	padding: 0px;
@@ -1072,7 +1072,7 @@ object {
 
 .page-template-templatesattending-php .site-header-inner {
 	margin: 0 auto;
-	padding: 40px;
+	padding: 40px 40px 100px;
 	max-width: 874px;
 }
 
@@ -1085,17 +1085,18 @@ object {
 /* line 36, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .event-dates {
-	font-size: 30px;
+	font-size: 38px;
 	text-transform: uppercase;
 }
 
 /* line 41, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-branding {
+	padding: 80px 0 20px;
 	text-align: center;
 }
 
-/* line 45, sass/templates/_attending.scss */
+/* line 46, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-title,
 .page-template-templatesattending-php .site-title a {
@@ -1106,7 +1107,7 @@ object {
 	text-decoration: none;
 }
 
-/* line 53, sass/templates/_attending.scss */
+/* line 54, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-description {
 	color: #fff;
@@ -1114,36 +1115,122 @@ object {
 	line-height: 58px;
 }
 
-/* line 59, sass/templates/_attending.scss */
+/* line 60, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .newsletter-signup-form {
 	padding: 0 100px;
 	text-align: center;
 }
 
-/* line 64, sass/templates/_attending.scss */
+/* line 65, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .newsletter-signup-form input[type="text"] {
+	line-height: normal;
+	font-size: 18px;
 	padding: 10px;
 	text-align: center;
 	width: 100%;
 }
 
-/* line 72, sass/templates/_attending.scss */
+/* line 75, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .content-area {
 	width: 100%;
 	text-align: center;
 }
 
-/* line 77, sass/templates/_attending.scss */
+/* line 80, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .content-area h3 {
 	font-size: 36px;
 	text-transform: uppercase;
 }
 
-/* line 84, sass/templates/_attending.scss */
+/* line 90, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_wrapper {
+	color: #fff;
+	font-size: 28px;
+}
+
+/* line 95, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_wrapper .ginput_container label {
+	font-size: 22px;
+}
+
+/* line 99, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_wrapper input {
+	font-size: 22px;
+	padding: 12px;
+	line-height: 24px;
+}
+
+/* line 105, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_wrapper .gfield_required {
+	color: #fff;
+}
+
+/* line 109, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_wrapper .gform_footer {
+	text-align: center;
+	width: 100%;
+}
+
+/* line 114, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_wrapper .gform_footer input[type="submit"] {
+	color: #000;
+	box-shadow: none;
+	border-radius: 0;
+	background: #fff;
+	font-family: "Axis";
+	text-transform: uppercase;
+	line-height: 53px;
+	padding: 6px 30px 0;
+}
+
+/* line 128, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_wrapper .validation_error {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	text-decoration: underline;
+}
+
+/* line 135, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_wrapper .top_label .gfield_error {
+	width: 100%;
+}
+
+/* line 141, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_confirmation_message {
+	font-size: 32px;
+	color: #fff;
+	text-align: center;
+	padding: 0;
+	line-height: 36px;
+}
+
+/* line 148, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_confirmation_message p:first-child {
+	margin-bottom: 20px;
+}
+
+/* line 155, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .edit-link {
+	display: none !important;
+}
+
+/* line 159, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .attendee-list {
 	list-style: none;
@@ -1151,27 +1238,27 @@ object {
 	padding: 0;
 }
 
-/* line 90, sass/templates/_attending.scss */
+/* line 165, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .attendee-name {
 	font-size: 36px;
 	display: block;
 }
 
-/* line 95, sass/templates/_attending.scss */
+/* line 170, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .attendee-byline {
 	font-size: 28px;
 	display: block;
 }
 
-/* line 101, sass/templates/_attending.scss */
+/* line 176, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-footer {
 	text-align: center;
 }
 
-/* line 105, sass/templates/_attending.scss */
+/* line 180, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-info,
 .page-template-templatesattending-php .site-info a {

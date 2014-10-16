@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordSesh Theme 0.0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2014-10-16 11:29:31+00:00\n"
+"POT-Creation-Date: 2014-10-16 16:24:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -125,12 +125,12 @@ msgid ""
 msgstr ""
 
 #: content-page.php:18 content-single.php:20 content.php:22
-#: templates/attending.php:73 templates/landing.php:22
+#: parts/newsletter-signup.php:13 templates/landing.php:22
 msgid "Pages:"
 msgstr ""
 
 #: content-page.php:24 content-page.php:27 content-search.php:53
-#: content-single.php:60 content.php:55 templates/attending.php:82
+#: content-single.php:60 content.php:55 parts/newsletter-signup.php:20
 #: templates/landing.php:29
 msgid "Edit"
 msgstr ""
@@ -187,7 +187,7 @@ msgstr ""
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: footer.php:15 templates/attending.php:96
+#: footer.php:15 templates/attending.php:71
 msgid "Proudly powered by %s"
 msgstr ""
 
@@ -230,10 +230,6 @@ msgstr ""
 
 #: parts/attendees.php:1
 msgid "Attendees"
-msgstr ""
-
-#: parts/newsletter-signup.php:3
-msgid "Enter your email to subscribe and stay updated."
 msgstr ""
 
 #: search.php:16

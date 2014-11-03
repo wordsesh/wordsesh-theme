@@ -142,7 +142,7 @@ html {
 /* line 39, sass/partials/_reset.scss */
 
 body {
-	background: white;
+	background: #fff;
 }
 
 /* line 43, sass/partials/_reset.scss */
@@ -454,32 +454,32 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, 0.8);
+	border: 3px solid;
+	background: none;
+	color: #083995;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
 	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	padding: .6em 1em .6em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
-/* line 31, sass/partials/_forms.scss */
+/* line 34, sass/partials/_forms.scss */
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+	color: rgba(18, 96, 173, 0.5);
 }
 
-/* line 36, sass/partials/_forms.scss */
+/* line 38, sass/partials/_forms.scss */
 
 button:focus,
 button:active,
@@ -489,18 +489,17 @@ input[type="reset"]:focus,
 input[type="reset"]:active,
 input[type="submit"]:focus,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+	color: #7e7e7e;
 }
 
-/* line 43, sass/partials/_forms.scss */
+/* line 44, sass/partials/_forms.scss */
 
 input[type="checkbox"],
 input[type="radio"] {
 	padding: 0; /* Addresses excess padding in IE8/9 */
 }
 
-/* line 48, sass/partials/_forms.scss */
+/* line 49, sass/partials/_forms.scss */
 
 input[type="search"] {
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */ /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
@@ -508,13 +507,13 @@ input[type="search"] {
 	box-sizing: content-box;
 }
 
-/* line 54, sass/partials/_forms.scss */
+/* line 55, sass/partials/_forms.scss */
 
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
 	-webkit-appearance: none;
 }
 
-/* line 59, sass/partials/_forms.scss */
+/* line 60, sass/partials/_forms.scss */
 
 button::-moz-focus-inner,
 input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -522,7 +521,7 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 	padding: 0;
 }
 
-/* line 65, sass/partials/_forms.scss */
+/* line 66, sass/partials/_forms.scss */
 
 input[type="text"],
 input[type="email"],
@@ -535,7 +534,7 @@ textarea {
 	border-radius: 3px;
 }
 
-/* line 75, sass/partials/_forms.scss */
+/* line 76, sass/partials/_forms.scss */
 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -546,7 +545,7 @@ textarea:focus {
 	color: #111;
 }
 
-/* line 80, sass/partials/_forms.scss */
+/* line 81, sass/partials/_forms.scss */
 
 input[type="text"],
 input[type="email"],
@@ -556,7 +555,7 @@ input[type="search"] {
 	padding: 3px;
 }
 
-/* line 88, sass/partials/_forms.scss */
+/* line 89, sass/partials/_forms.scss */
 
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -811,30 +810,6 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-9.0 Widgets
---------------------------------------------------------------*/
-
-/* line 5, sass/partials/_widgets.scss */
-
-.widget {
-	margin: 0 0 1.5em; /* Make sure select elements fit in widgets */
-}
-
-/* line 9, sass/partials/_widgets.scss */
-
-.widget select {
-	max-width: 100%;
-}
-
-/* Search widget */
-
-/* line 16, sass/partials/_widgets.scss */
-
-.widget_search .search-submit {
-	display: none;
-}
-
-/*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
 
@@ -1039,6 +1014,70 @@ object {
 
 .gallery-columns-9 .gallery-item {
 	max-width: 11.11%;
+}
+
+/* line 1, sass/partials/_map.scss */
+
+.map-container {
+	position: relative;
+}
+
+/* line 4, sass/partials/_map.scss */
+
+.map-container .site-header {
+	position: absolute;
+	z-index: 10;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background: rgba(18, 96, 173, 0.5);
+	color: #fff;
+	vertical-align: middle;
+	padding: 0;
+}
+
+/* line 16, sass/partials/_map.scss */
+
+.map-container img {
+	margin-top: 2em;
+}
+
+/* line 20, sass/partials/_map.scss */
+
+.map-container #map-canvas {
+	height: 500px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* line 26, sass/partials/_map.scss */
+
+.map-container button {
+	color: #fff;
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: .5em 5em;
+}
+
+/* line 30, sass/partials/_map.scss */
+
+.map-container button:hover {
+	background: #fff;
+	color: #083995;
+	border-color: #fff;
+}
+
+/* line 38, sass/partials/_map.scss */
+
+.map-container .site-title a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* line 41, sass/partials/_map.scss */
+
+.map-container .site-title a:hover {
+	color: #fff;
 }
 
 @font-face {
@@ -1463,6 +1502,8 @@ OPTIONAL BASE STYLES
 	float: left;
 	margin-right: 10px;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 @media (max-width: 1024px) {
 

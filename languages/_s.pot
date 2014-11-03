@@ -4,203 +4,49 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordSesh Theme 0.0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2014-11-03 14:01:22+00:00\n"
+"POT-Creation-Date: 2014-11-03 18:28:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.4.7\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
 #: 404.php:19
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the "
-"links below or a search?"
+msgid "It looks like nothing was found at this location."
 msgstr ""
 
-#: 404.php:27
-msgid "Most Used Categories"
-msgstr ""
-
-#: 404.php:44
-#. translators: %1$s: smiley
-msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
-#: archive.php:27
-msgid "Author: %s"
-msgstr ""
-
-#: archive.php:30
-msgid "Day: %s"
-msgstr ""
-
-#: archive.php:33
-msgid "Month: %s"
-msgstr ""
-
-#: archive.php:36
-msgid "Year: %s"
-msgstr ""
-
-#: archive.php:39
-msgid "Asides"
-msgstr ""
-
-#: archive.php:42
-msgid "Galleries"
-msgstr ""
-
-#: archive.php:45
-msgid "Images"
-msgstr ""
-
-#: archive.php:48
-msgid "Videos"
-msgstr ""
-
-#: archive.php:51
-msgid "Quotes"
-msgstr ""
-
-#: archive.php:54
-msgid "Links"
-msgstr ""
-
-#: archive.php:57
-msgid "Statuses"
-msgstr ""
-
-#: archive.php:60
-msgid "Audios"
-msgstr ""
-
-#: archive.php:63
-msgid "Chats"
-msgstr ""
-
-#: archive.php:66
-msgid "Archives"
-msgstr ""
-
-#: comments.php:35 comments.php:52
-msgid "Comment navigation"
-msgstr ""
-
-#: comments.php:36 comments.php:53
-msgid "&larr; Older Comments"
-msgstr ""
-
-#: comments.php:37 comments.php:54
-msgid "Newer Comments &rarr;"
-msgstr ""
-
-#: comments.php:64
-msgid "Comments are closed."
-msgstr ""
-
-#: content-none.php:13
-msgid "Nothing Found"
-msgstr ""
-
-#: content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: content-none.php:23
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: content-none.php:28
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#: content-page.php:18 content-single.php:20 content.php:22
-#: parts/newsletter-signup.php:12 templates/landing.php:22
-msgid "Pages:"
-msgstr ""
-
-#: content-page.php:24 content-page.php:27 content-search.php:53
-#: content-single.php:60 content.php:55 parts/newsletter-signup.php:19
-#: templates/landing.php:29
-msgid "Edit"
-msgstr ""
-
-#: content-search.php:30 content-search.php:40 content-single.php:29
-#: content-single.php:32 content.php:32 content.php:42
-#. translators: used between list items, there is a space after the comma
-msgid ", "
-msgstr ""
-
-#: content-search.php:34 content.php:36
-msgid "Posted in %1$s"
-msgstr ""
-
-#: content-search.php:44 content.php:46
-msgid "Tagged %1$s"
-msgstr ""
-
-#: content-search.php:50 content.php:52
-msgid "Leave a comment"
-msgstr ""
-
-#: content-search.php:50 content.php:52
-msgid "1 Comment"
-msgstr ""
-
-#: content-search.php:50 content.php:52
-msgid "% Comments"
-msgstr ""
-
-#: content-single.php:37
-msgid ""
-"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" "
-"rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#: content-single.php:39
-msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#: content-single.php:45
-msgid ""
-"This entry was posted in %1$s and tagged %2$s. Bookmark the <a "
-"href=\"%3$s\" rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#: content-single.php:47
-msgid ""
-"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" "
-"rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#: content.php:19
+#: content.php:13
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content.php:16 parts/newsletter-signup.php:10 templates/landing.php:22
+msgid "Pages:"
 msgstr ""
 
 #: footer.php:15 templates/attending.php:71
 msgid "Proudly powered by %s"
 msgstr ""
 
+#: front-page.php:13
+msgid "Attendees"
+msgstr ""
+
+#: front-page.php:16
+msgid "Be a Part of WordSesh"
+msgstr ""
+
 #: functions.php:45 header.php:35 templates/attending.php:35
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:80
-msgid "Sidebar"
-msgstr ""
-
-#: header.php:23 header.php:34 templates/attending.php:21
-#: templates/attending.php:33
+#: header-map.php:26 header-map.php:41 header.php:23 header.php:34
+#: templates/attending.php:21 templates/attending.php:33
 msgid "Skip to content"
 msgstr ""
 
@@ -212,32 +58,8 @@ msgstr ""
 msgid "Attendee"
 msgstr ""
 
-#: inc/extras.php:63
-msgid "Page %s"
-msgstr ""
-
-#: inc/template-tags.php:23
-msgid "Posts navigation"
-msgstr ""
-
-#: inc/template-tags.php:27
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr ""
-
-#: inc/template-tags.php:31
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: inc/template-tags.php:56
-msgid "Post navigation"
-msgstr ""
-
-#: parts/attendees.php:1
-msgid "Attendees"
-msgstr ""
-
-#: search.php:16
-msgid "Search Results for: %s"
+#: parts/newsletter-signup.php:17 templates/landing.php:29
+msgid "Edit"
 msgstr ""
 
 #: templates/attending.php:43
@@ -270,41 +92,4 @@ msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Landing Page"
-msgstr ""
-
-#: archive.php:33
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr ""
-
-#: archive.php:36
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr ""
-
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/template-tags.php:59
-msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
-msgstr ""
-
-#: inc/template-tags.php:60
-msgctxt "Next post link"
-msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: inc/template-tags.php:86
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr ""
-
-#: inc/template-tags.php:91
-msgctxt "post author"
-msgid "by %s"
 msgstr ""

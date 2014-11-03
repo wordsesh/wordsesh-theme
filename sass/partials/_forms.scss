@@ -11,6 +11,33 @@ textarea {
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 }
 
+a.button {
+	border: 3px solid;
+	background: none;
+	color: #083995;
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	@include rem(font-size, 12px);
+	line-height: 1;
+	padding: .6em 1em .6em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+	&:hover {
+		color: rgba(18, 96, 173, 0.5);
+	}
+
+	&:focus,
+	&:active {
+		color: #7e7e7e;
+	}
+}
+
 button,
 input[type="button"],
 input[type="reset"],

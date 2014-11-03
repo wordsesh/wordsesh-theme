@@ -34,9 +34,9 @@
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</div>
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<a class="button" href="#signup-form">I'm Attending</a>
 
-				<button>I'm Attending</button>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
 
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wordsesh-theme' ); ?></a>
 

@@ -450,6 +450,38 @@ textarea {
 
 /* line 14, sass/partials/_forms.scss */
 
+a.button {
+	border: 3px solid;
+	background: none;
+	color: #083995;
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: .6em 1em .6em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* line 31, sass/partials/_forms.scss */
+
+a.button:hover {
+	color: rgba(18, 96, 173, 0.5);
+}
+
+/* line 35, sass/partials/_forms.scss */
+
+a.button:focus,
+a.button:active {
+	color: #7e7e7e;
+}
+
+/* line 41, sass/partials/_forms.scss */
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -470,7 +502,7 @@ input[type="submit"] {
 	transition: all 0.3s;
 }
 
-/* line 34, sass/partials/_forms.scss */
+/* line 61, sass/partials/_forms.scss */
 
 button:hover,
 input[type="button"]:hover,
@@ -479,7 +511,7 @@ input[type="submit"]:hover {
 	color: rgba(18, 96, 173, 0.5);
 }
 
-/* line 38, sass/partials/_forms.scss */
+/* line 65, sass/partials/_forms.scss */
 
 button:focus,
 button:active,
@@ -492,14 +524,14 @@ input[type="submit"]:active {
 	color: #7e7e7e;
 }
 
-/* line 44, sass/partials/_forms.scss */
+/* line 71, sass/partials/_forms.scss */
 
 input[type="checkbox"],
 input[type="radio"] {
 	padding: 0; /* Addresses excess padding in IE8/9 */
 }
 
-/* line 49, sass/partials/_forms.scss */
+/* line 76, sass/partials/_forms.scss */
 
 input[type="search"] {
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */ /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
@@ -507,13 +539,13 @@ input[type="search"] {
 	box-sizing: content-box;
 }
 
-/* line 55, sass/partials/_forms.scss */
+/* line 82, sass/partials/_forms.scss */
 
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
 	-webkit-appearance: none;
 }
 
-/* line 60, sass/partials/_forms.scss */
+/* line 87, sass/partials/_forms.scss */
 
 button::-moz-focus-inner,
 input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -521,7 +553,7 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 	padding: 0;
 }
 
-/* line 66, sass/partials/_forms.scss */
+/* line 93, sass/partials/_forms.scss */
 
 input[type="text"],
 input[type="email"],
@@ -534,7 +566,7 @@ textarea {
 	border-radius: 3px;
 }
 
-/* line 76, sass/partials/_forms.scss */
+/* line 103, sass/partials/_forms.scss */
 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -545,7 +577,7 @@ textarea:focus {
 	color: #111;
 }
 
-/* line 81, sass/partials/_forms.scss */
+/* line 108, sass/partials/_forms.scss */
 
 input[type="text"],
 input[type="email"],
@@ -555,7 +587,7 @@ input[type="search"] {
 	padding: 3px;
 }
 
-/* line 89, sass/partials/_forms.scss */
+/* line 116, sass/partials/_forms.scss */
 
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -813,31 +845,40 @@ a:active {
 10.0 Content
 --------------------------------------------------------------*/
 
+/* line 6, sass/partials/_content.scss */
+
+.section-title {
+	font-size: 3em;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1;
+}
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
 
-/* line 12, sass/partials/_content.scss */
+/* line 20, sass/partials/_content.scss */
 
 .hentry {
 	margin: 0 0 1.5em;
 }
 
-/* line 16, sass/partials/_content.scss */
+/* line 24, sass/partials/_content.scss */
 
 .byline,
 .updated {
 	display: none;
 }
 
-/* line 21, sass/partials/_content.scss */
+/* line 29, sass/partials/_content.scss */
 
 .single .byline,
 .group-blog .byline {
 	display: inline;
 }
 
-/* line 26, sass/partials/_content.scss */
+/* line 34, sass/partials/_content.scss */
 
 .page-content,
 .entry-content,
@@ -845,7 +886,7 @@ a:active {
 	margin: 1.5em 0 0;
 }
 
-/* line 32, sass/partials/_content.scss */
+/* line 40, sass/partials/_content.scss */
 
 .page-links {
 	clear: both;
@@ -856,7 +897,7 @@ a:active {
 10.2 Asides
 --------------------------------------------------------------*/
 
-/* line 41, sass/partials/_content.scss */
+/* line 49, sass/partials/_content.scss */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -867,7 +908,7 @@ a:active {
 10.3 Comments
 --------------------------------------------------------------*/
 
-/* line 50, sass/partials/_content.scss */
+/* line 58, sass/partials/_content.scss */
 
 .comment-content a {
 	word-wrap: break-word;
@@ -1061,7 +1102,7 @@ object {
 
 /* line 26, sass/partials/_map.scss */
 
-.map-container button {
+.map-container a.button {
 	color: #fff;
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -1070,7 +1111,7 @@ object {
 
 /* line 30, sass/partials/_map.scss */
 
-.map-container button:hover {
+.map-container a.button:hover {
 	background: #fff;
 	color: #083995;
 	border-color: #fff;
@@ -1099,6 +1140,18 @@ object {
 
 /* line 6, sass/partials/_clock.scss */
 
+.clock-label {
+	position: absolute;
+	z-index: 10;
+	color: #4F4F4F;
+	background: rgba(255, 255, 255, 0.5);
+	padding: .1em .5em;
+	font-size: 8px;
+	letter-spacing: .1em;
+}
+
+/* line 15, sass/partials/_clock.scss */
+
 .utc-24-clock {
 	position: relative;
 	width: auto;
@@ -1111,38 +1164,26 @@ object {
 	min-width: 1200px;
 }
 
-/* line 17, sass/partials/_clock.scss */
+/* line 26, sass/partials/_clock.scss */
 
-.clock-label {
-	position: absolute;
-	z-index: 10;
-	color: #4F4F4F;
-	background: rgba(255, 255, 255, 0.5);
-	padding: .1em .5em;
-	font-size: 8px;
-	letter-spacing: .1em;
-}
-
-/* line 27, sass/partials/_clock.scss */
-
-.clock-hours {
+.utc-24-clock .clock-hours {
 	font-size: 12px;
 	font-weight: 100;
 	height: 10px;
 }
 
-/* line 33, sass/partials/_clock.scss */
+/* line 32, sass/partials/_clock.scss */
 
-.hour-box {
+.utc-24-clock .hour-box {
 	position: relative;
 	display: inline-block;
 	width: 4.1666666667%;
 	height: 10px;
 }
 
-/* line 40, sass/partials/_clock.scss */
+/* line 37, sass/partials/_clock.scss */
 
-.hour {
+.utc-24-clock .hour-box .hour {
 	position: relative;
 	color: #4F4F4F;
 	font-size: 12px;
@@ -1152,9 +1193,9 @@ object {
 	text-align: center;
 }
 
-/* line 50, sass/partials/_clock.scss */
+/* line 46, sass/partials/_clock.scss */
 
-.line {
+.utc-24-clock .hour-box .line {
 	position: absolute;
 	width: 1px;
 	height: 15px;
@@ -1162,9 +1203,9 @@ object {
 	bottom: -5px;
 }
 
-/* line 58, sass/partials/_clock.scss */
+/* line 56, sass/partials/_clock.scss */
 
-.time-bar {
+.utc-24-clock .time-bar {
 	height: 10px;
 	width: 0%;
 	background: #083995;
@@ -1174,9 +1215,9 @@ object {
 	position: relative;
 }
 
-/* line 68, sass/partials/_clock.scss */
+/* line 66, sass/partials/_clock.scss */
 
-.time-bar:after {
+.utc-24-clock .time-bar:after {
 	content: '|';
 	color: #7e7e7e;
 	position: absolute;
@@ -1533,30 +1574,16 @@ OPTIONAL BASE STYLES
 	max-width: 1140px;
 }
 
-/* line 15, sass/partials/_base.scss */
-
-.content-area {
-	float: left;
-	width: 70%;
-}
-
-/* line 20, sass/partials/_base.scss */
-
-.widget-area {
-	float: right;
-	width: 30%;
-}
-
 /* Branding */
 
-/* line 27, sass/partials/_base.scss */
+/* line 21, sass/partials/_base.scss */
 
 .site-title {
 	font-size: 48px;
 	font-size: 4.8rem;
 }
 
-/* line 31, sass/partials/_base.scss */
+/* line 25, sass/partials/_base.scss */
 
 .site-description {
 	font-size: 24px;
@@ -1566,7 +1593,7 @@ OPTIONAL BASE STYLES
 
 /* Navigation */
 
-/* line 42, sass/partials/_base.scss */
+/* line 36, sass/partials/_base.scss */
 
 .menu ul li {
 	margin-right: 10px;
@@ -1574,7 +1601,7 @@ OPTIONAL BASE STYLES
 
 /* Content */
 
-/* line 52, sass/partials/_base.scss */
+/* line 46, sass/partials/_base.scss */
 
 .entry-title {
 	font-size: 36px;
@@ -1583,27 +1610,27 @@ OPTIONAL BASE STYLES
 
 /* Comments */
 
-/* line 58, sass/partials/_base.scss */
+/* line 52, sass/partials/_base.scss */
 
 .comments-title {
 	font-size: 24px;
 	font-size: 2.4rem;
 }
 
-/* line 62, sass/partials/_base.scss */
+/* line 56, sass/partials/_base.scss */
 
 .comment-list {
 	list-style: none;
 	margin: 0;
 }
 
-/* line 67, sass/partials/_base.scss */
+/* line 61, sass/partials/_base.scss */
 
 .comment-meta {
 	margin-bottom: 14px;
 }
 
-/* line 71, sass/partials/_base.scss */
+/* line 65, sass/partials/_base.scss */
 
 .avatar {
 	float: left;

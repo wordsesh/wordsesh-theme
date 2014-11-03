@@ -30,6 +30,8 @@ function wordsesh_theme_scripts() {
 
 	wp_enqueue_script( 'wordsesh-mapping', get_template_directory_uri() . '/js/mapping' . $minnified . '.js', array('jquery'), $version, true );
 
+	wp_enqueue_script( 'wordsesh-clock', get_template_directory_uri() . '/js/clock' . $minnified . '.js', array('jquery'), $version, true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

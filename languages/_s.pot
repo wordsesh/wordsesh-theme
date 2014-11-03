@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordSesh Theme 0.0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2014-11-03 17:22:17+00:00\n"
+"POT-Creation-Date: 2014-11-03 17:58:05+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: header-map.php:23 header-map.php:38 header.php:23 header.php:34
+#: header-map.php:26 header-map.php:41 header.php:23 header.php:34
 #: templates/attending.php:21 templates/attending.php:33
 msgid "Skip to content"
 msgstr ""

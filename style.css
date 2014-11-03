@@ -1016,6 +1016,15 @@ object {
 	max-width: 11.11%;
 }
 
+/* line 1, sass/partials/_top-bar.scss */
+
+.date-bar {
+	padding: .5em 1em;
+	text-align: right;
+	font-style: italic;
+	border-bottom: 1px solid #7e7e7e;
+}
+
 /* line 1, sass/partials/_map.scss */
 
 .map-container {
@@ -1078,6 +1087,104 @@ object {
 
 .map-container .site-title a:hover {
 	color: #fff;
+}
+
+/* line 1, sass/partials/_clock.scss */
+
+.clock-container {
+	width: 100%;
+	overflow: hidden;
+	height: 40px;
+}
+
+/* line 6, sass/partials/_clock.scss */
+
+.utc-24-clock {
+	position: relative;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #E5E5E5;
+	border-top: 0;
+	background: #F9F9F9;
+	height: 10px;
+	min-width: 1200px;
+}
+
+/* line 17, sass/partials/_clock.scss */
+
+.clock-label {
+	position: absolute;
+	z-index: 10;
+	color: #4F4F4F;
+	background: rgba(255, 255, 255, 0.5);
+	padding: .1em .5em;
+	font-size: 8px;
+	letter-spacing: .1em;
+}
+
+/* line 27, sass/partials/_clock.scss */
+
+.clock-hours {
+	font-size: 12px;
+	font-weight: 100;
+	height: 10px;
+}
+
+/* line 33, sass/partials/_clock.scss */
+
+.hour-box {
+	position: relative;
+	display: inline-block;
+	width: 4.1666666667%;
+	height: 10px;
+}
+
+/* line 40, sass/partials/_clock.scss */
+
+.hour {
+	position: relative;
+	color: #4F4F4F;
+	font-size: 12px;
+	bottom: -20px;
+	width: 36px;
+	margin-left: -18px;
+	text-align: center;
+}
+
+/* line 50, sass/partials/_clock.scss */
+
+.line {
+	position: absolute;
+	width: 1px;
+	height: 15px;
+	background: #E5E5E5;
+	bottom: -5px;
+}
+
+/* line 58, sass/partials/_clock.scss */
+
+.time-bar {
+	height: 10px;
+	width: 0%;
+	background: #083995;
+	-webkit-transition: width 1s linear;
+	transition: width 1s linear;
+	margin-top: -10px;
+	position: relative;
+}
+
+/* line 68, sass/partials/_clock.scss */
+
+.time-bar:after {
+	content: '|';
+	color: #7e7e7e;
+	position: absolute;
+	right: -.1em;
+	bottom: -.6em;
+	font-size: 2em;
+	text-indent: 12px;
+	font-weight: lighter;
 }
 
 @font-face {

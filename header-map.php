@@ -19,6 +19,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<div class="date-bar">December 20, 2014 00:00 UTC+0</div>
+
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wordsesh-theme' ); ?></a>
 
@@ -43,5 +46,7 @@
 		<div id="map-canvas"></div>
 
 	</div>
+
+	<?php get_template_part( 'parts/clock' ); ?>
 
 	<div id="content" class="site-content">

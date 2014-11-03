@@ -852,33 +852,41 @@ a:active {
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 1;
+	margin-bottom: 1em;
+}
+
+/* line 14, sass/partials/_content.scss */
+
+#signup-form {
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
 
-/* line 20, sass/partials/_content.scss */
+/* line 26, sass/partials/_content.scss */
 
 .hentry {
 	margin: 0 0 1.5em;
 }
 
-/* line 24, sass/partials/_content.scss */
+/* line 30, sass/partials/_content.scss */
 
 .byline,
 .updated {
 	display: none;
 }
 
-/* line 29, sass/partials/_content.scss */
+/* line 35, sass/partials/_content.scss */
 
 .single .byline,
 .group-blog .byline {
 	display: inline;
 }
 
-/* line 34, sass/partials/_content.scss */
+/* line 40, sass/partials/_content.scss */
 
 .page-content,
 .entry-content,
@@ -886,7 +894,7 @@ a:active {
 	margin: 1.5em 0 0;
 }
 
-/* line 40, sass/partials/_content.scss */
+/* line 46, sass/partials/_content.scss */
 
 .page-links {
 	clear: both;
@@ -897,7 +905,7 @@ a:active {
 10.2 Asides
 --------------------------------------------------------------*/
 
-/* line 49, sass/partials/_content.scss */
+/* line 55, sass/partials/_content.scss */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -908,10 +916,22 @@ a:active {
 10.3 Comments
 --------------------------------------------------------------*/
 
-/* line 58, sass/partials/_content.scss */
+/* line 64, sass/partials/_content.scss */
 
 .comment-content a {
 	word-wrap: break-word;
+}
+
+/* line 71, sass/partials/_content.scss */
+
+.site-footer {
+	text-align: center;
+}
+
+/* line 73, sass/partials/_content.scss */
+
+.site-footer a {
+	color: #404040;
 }
 
 /*--------------------------------------------------------------
@@ -1080,19 +1100,20 @@ object {
 	text-align: center;
 	height: 100%;
 	width: 100%;
+	max-width: none;
 	background: rgba(18, 96, 173, 0.5);
 	color: #fff;
 	vertical-align: middle;
 	padding: 0;
 }
 
-/* line 16, sass/partials/_map.scss */
+/* line 17, sass/partials/_map.scss */
 
 .map-container img {
 	margin-top: 2em;
 }
 
-/* line 20, sass/partials/_map.scss */
+/* line 21, sass/partials/_map.scss */
 
 .map-container #map-canvas {
 	height: 500px;
@@ -1100,7 +1121,7 @@ object {
 	padding: 0px;
 }
 
-/* line 26, sass/partials/_map.scss */
+/* line 27, sass/partials/_map.scss */
 
 .map-container a.button {
 	color: #fff;
@@ -1109,7 +1130,7 @@ object {
 	padding: .5em 5em;
 }
 
-/* line 30, sass/partials/_map.scss */
+/* line 31, sass/partials/_map.scss */
 
 .map-container a.button:hover {
 	background: #fff;
@@ -1117,14 +1138,14 @@ object {
 	border-color: #fff;
 }
 
-/* line 38, sass/partials/_map.scss */
+/* line 39, sass/partials/_map.scss */
 
 .map-container .site-title a {
 	color: #fff;
 	text-decoration: none;
 }
 
-/* line 41, sass/partials/_map.scss */
+/* line 42, sass/partials/_map.scss */
 
 .map-container .site-title a:hover {
 	color: #fff;

@@ -24,6 +24,7 @@
 				$attendee_email = get_post_meta( get_the_ID(), 'ws_attendee_email', true );
 				$attendee_city = get_post_meta( get_the_ID(), 'ws_attendee_city', true );
 				$attendee_country = get_post_meta( get_the_ID(), 'ws_attendee_country', true );
+				$attendee_state = get_post_meta( get_the_ID(), 'ws_attendee_state', true );
 				$attendee_avatar = get_avatar_url( $attendee_email, '200' );
 				?>
 

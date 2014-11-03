@@ -28,6 +28,7 @@ function ws_add_attendee( $entry, $form ){
 	$attendee_email 		= $entry['2'];
 	$attendee_city 			= $entry['3'];
 	$attendee_country 		= $entry['4'];
+	$attendee_state 		= $entry['5'];
 
 	$attendee_title = $attendee_first_name . ' ' . $attendee_last_name . ', ' . $attendee_country;
 
@@ -45,6 +46,7 @@ function ws_add_attendee( $entry, $form ){
 	update_post_meta( $attendee_id, 'ws_attendee_email', esc_html( $attendee_email ) );
 	update_post_meta( $attendee_id, 'ws_attendee_city', esc_html( $attendee_city ) );
 	update_post_meta( $attendee_id, 'ws_attendee_country', esc_html( $attendee_country ) );
+	update_post_meta( $attendee_id, 'ws_attendee_state', esc_html( $attendee_state ) );
 	
 }
 add_action( 'gform_after_submission', 'ws_add_attendee', 10, 2 );

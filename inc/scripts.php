@@ -26,11 +26,13 @@ function wordsesh_theme_scripts() {
 
 	wp_enqueue_style( 'wordsesh-theme-style', get_stylesheet_directory_uri() . '/style' . $minnified . '.css' );
 
-	wp_enqueue_script( 'wordsesh-theme-project', get_template_directory_uri() . '/js/project' . $minnified . '.js', array('jquery'), $version, true );
-
 	wp_enqueue_script( 'wordsesh-mapping', get_template_directory_uri() . '/js/mapping' . $minnified . '.js', array('jquery'), $version, true );
 
 	wp_enqueue_script( 'wordsesh-clock', get_template_directory_uri() . '/js/clock' . $minnified . '.js', array('jquery'), $version, true );
+
+	wp_enqueue_script( 'wordsesh-honeycomb', get_template_directory_uri() . '/js/honeycombs' . $minnified . '.js', array('jquery'), $version, true );
+
+	wp_enqueue_script( 'wordsesh-theme-project', get_template_directory_uri() . '/js/project' . $minnified . '.js', array('jquery'), $version, true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

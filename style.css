@@ -1083,7 +1083,12 @@ object {
 	padding: .5em 1em;
 	text-align: right;
 	font-style: italic;
-	border-bottom: 1px solid #7e7e7e;
+	border-bottom: 1px solid #869AAD;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
 }
 
 /* line 1, sass/partials/_map.scss */
@@ -1573,6 +1578,88 @@ object {
 
 #attendees .attendee_item:nth-child(n+5) {
 	margin-top: -55px;
+}
+
+/* line 1, sass/partials/_honeycombs.scss */
+
+.honeycombs {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+
+/* line 8, sass/partials/_honeycombs.scss */
+
+.honeycombs .inner_span {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #f7cd07;
+	font-family: sans-serif;
+	color: #000;
+}
+
+/* line 16, sass/partials/_honeycombs.scss */
+
+.honeycombs .inner-text {
+	padding-top: 30%;
+}
+
+/* line 20, sass/partials/_honeycombs.scss */
+
+.honeycombs .honeycombs-inner-wrapper {
+	display: inline-block;
+	overflow: hidden;
+	width: 700px;
+	position: relative;
+	height: 1200px;
+}
+
+/* line 28, sass/partials/_honeycombs.scss */
+
+.honeycombs .comb {
+	position: absolute;
+	display: inline-block;
+}
+
+/* line 33, sass/partials/_honeycombs.scss */
+
+.honeycombs .hex_l,
+.honeycombs .hex_r {
+	overflow: hidden;
+	position: absolute; /* -webkit-backface-visibility: hidden; */
+}
+
+/* line 40, sass/partials/_honeycombs.scss */
+
+.honeycombs .hex_l {
+	visibility: hidden;
+	-ms-transform: rotate(60deg);
+	-webkit-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+/* line 50, sass/partials/_honeycombs.scss */
+
+.honeycombs .hex_r {
+	visibility: hidden;
+	-ms-transform: rotate(-120deg);
+	-webkit-transform: rotate(-120deg);
+	transform: rotate(-120deg);
+}
+
+/* line 60, sass/partials/_honeycombs.scss */
+
+.honeycombs .hex_inner {
+	display: block;
+	visibility: visible;
+	-ms-transform: rotate(60deg);
+	-webkit-transform: rotate(60deg);
+	transform: rotate(60deg);
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
 }
 
 /*

@@ -29,7 +29,7 @@ function ws_add_attendee( $entry, $form ){
 	$attendee_city 			= $entry['3'];
 	$attendee_country 		= $entry['4'];
 
-	$attendee_title = $attendee_first_name . ' ' . $attendee_first_name . ', ' . $attendee_country;
+	$attendee_title = $attendee_first_name . ' ' . $attendee_last_name . ', ' . $attendee_country;
 
 	$attendee = array(
 	  'post_title'    => esc_html( $attendee_title ),

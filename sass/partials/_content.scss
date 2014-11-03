@@ -8,6 +8,12 @@
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 1;
+	margin-bottom: 1em;
+}
+
+#signup-form {
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 /*--------------------------------------------------------------
@@ -60,4 +66,11 @@
 }
 
 .bypostauthor {
+}
+
+.site-footer {
+	text-align: center;
+	a {
+		color: #404040;
+	}
 }

@@ -1,6 +1,6 @@
 <section id="attendees">
 
-    <article>
+    <article class="honeycombs">
 
 		<?php
 
@@ -25,13 +25,8 @@
 				$attendee_avatar = get_avatar_url( $attendee_email, '200' );
 				?>
 
-				<div class="attendee_item">
-				<div class="hexagon hexagon2">
-				    <div class="hexagon-in1">
-				        <div class="hexagon-in2" style="background-image: url('<?php echo $attendee_avatar; ?>');">
-				        </div>
-				     </div>
-				 </div>
+				<div class="comb">
+				    <img src="<?php echo $attendee_avatar; ?>" />
 				</div>
 
 	 		<?php endwhile; ?>
@@ -41,5 +36,11 @@
 	 	<?php endif; ?>
 
 	</article>
+
+	<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('.honeycombs').honeycombs();
+    });
+</script>
 
 </section>

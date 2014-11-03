@@ -337,6 +337,9 @@
 	.attendee_item:nth-child(n+5) {
 		margin-top: -56px;
 	}
+	.attendee_item:nth-child(7n-2) {
+		margin-left: 0px !important;
+	}
 	#attendees article {
 		width: 610px;
 		margin: 0 auto;
@@ -370,11 +373,5 @@
 	}
 	.attendee_item:nth-child(n+2) {
 		margin-top: -56px;
-	}
-}
-
-@media (max-width: 821px) {
-	.attendee_item:nth-child(7n-2) {
-		margin-left: 0px !important;
 	}
 }

@@ -117,3 +117,6 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load styles & scripts.
  */
 require get_template_directory() . '/inc/scripts.php';
+
+// Attendees
+require get_template_directory() . '/inc/attendees.php';

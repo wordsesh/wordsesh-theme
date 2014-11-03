@@ -1089,14 +1089,14 @@ object {
 	text-transform: uppercase;
 }
 
-/* line 41, sass/templates/_attending.scss */
+/* line 49, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-branding {
 	padding: 80px 0 20px;
 	text-align: center;
 }
 
-/* line 46, sass/templates/_attending.scss */
+/* line 63, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-title,
 .page-template-templatesattending-php .site-title a {
@@ -1107,7 +1107,7 @@ object {
 	text-decoration: none;
 }
 
-/* line 54, sass/templates/_attending.scss */
+/* line 82, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-description {
 	color: #fff;
@@ -1115,14 +1115,14 @@ object {
 	line-height: 58px;
 }
 
-/* line 60, sass/templates/_attending.scss */
+/* line 98, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .newsletter-signup-form {
 	padding: 0 100px;
 	text-align: center;
 }
 
-/* line 65, sass/templates/_attending.scss */
+/* line 103, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .newsletter-signup-form input[type="text"] {
 	line-height: normal;
@@ -1132,55 +1132,56 @@ object {
 	width: 100%;
 }
 
-/* line 75, sass/templates/_attending.scss */
+/* line 113, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .content-area {
 	width: 100%;
 	text-align: center;
 }
 
-/* line 80, sass/templates/_attending.scss */
+/* line 118, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .content-area h3 {
 	font-size: 36px;
 	text-transform: uppercase;
 }
 
-/* line 90, sass/templates/_attending.scss */
+/* line 132, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_wrapper {
 	color: #fff;
 	font-size: 28px;
 }
 
-/* line 95, sass/templates/_attending.scss */
+/* line 137, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_wrapper .ginput_container label {
 	font-size: 22px;
 }
 
-/* line 99, sass/templates/_attending.scss */
+/* line 141, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_wrapper input {
 	font-size: 22px;
 	padding: 12px;
 	line-height: 24px;
+	border-radius: 0px;
 }
 
-/* line 105, sass/templates/_attending.scss */
+/* line 148, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_wrapper .gfield_required {
 	color: #fff;
 }
 
-/* line 109, sass/templates/_attending.scss */
+/* line 152, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_wrapper .gform_footer {
 	text-align: center;
 	width: 100%;
 }
 
-/* line 114, sass/templates/_attending.scss */
+/* line 157, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_wrapper .gform_footer input[type="submit"] {
 	color: #000;
@@ -1193,7 +1194,7 @@ object {
 	padding: 6px 30px 0;
 }
 
-/* line 128, sass/templates/_attending.scss */
+/* line 171, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_wrapper .validation_error {
 	color: #fff;
@@ -1202,13 +1203,13 @@ object {
 	text-decoration: underline;
 }
 
-/* line 135, sass/templates/_attending.scss */
+/* line 178, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_wrapper .top_label .gfield_error {
 	width: 100%;
 }
 
-/* line 141, sass/templates/_attending.scss */
+/* line 184, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_confirmation_message {
 	font-size: 32px;
@@ -1218,19 +1219,25 @@ object {
 	line-height: 36px;
 }
 
-/* line 148, sass/templates/_attending.scss */
+/* line 191, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .entry-content .gform_confirmation_message p:first-child {
 	margin-bottom: 20px;
 }
 
-/* line 155, sass/templates/_attending.scss */
+/* line 195, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content .gform_confirmation_message p {
+	margin-bottom: 0;
+}
+
+/* line 202, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .edit-link {
 	display: none !important;
 }
 
-/* line 159, sass/templates/_attending.scss */
+/* line 206, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .attendee-list {
 	list-style: none;
@@ -1238,33 +1245,126 @@ object {
 	padding: 0;
 }
 
-/* line 165, sass/templates/_attending.scss */
+/* line 212, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .attendee-name {
 	font-size: 36px;
 	display: block;
 }
 
-/* line 170, sass/templates/_attending.scss */
+/* line 217, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .attendee-byline {
 	font-size: 28px;
 	display: block;
 }
 
-/* line 176, sass/templates/_attending.scss */
+/* line 223, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-footer {
 	text-align: center;
 }
 
-/* line 180, sass/templates/_attending.scss */
+/* line 227, sass/templates/_attending.scss */
 
 .page-template-templatesattending-php .site-info,
 .page-template-templatesattending-php .site-info a {
 	color: #000;
 	font-size: 28px;
 	text-decoration: none;
+}
+
+/* line 235, sass/templates/_attending.scss */
+
+#attendees {
+	width: 1000px;
+	overflow: hidden;
+	padding-bottom: 70px;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 2.5em;
+	text-align: left;
+}
+
+/* line 244, sass/templates/_attending.scss */
+
+#attendees .attendee_item {
+	width: 200px;
+	height: 223px;
+	position: relative;
+	display: inline-block;
+}
+
+/* line 251, sass/templates/_attending.scss */
+
+#attendees .hexagon2 {
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	top: -85px;
+}
+
+/* line 258, sass/templates/_attending.scss */
+
+#attendees .hexagon {
+	overflow: hidden;
+	visibility: hidden;
+	-webkit-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	transform: rotate(120deg);
+}
+
+/* line 270, sass/templates/_attending.scss */
+
+#attendees .hexagon-in1 {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+
+/* line 282, sass/templates/_attending.scss */
+
+#attendees .hexagon-in2 {
+	box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 125%;
+	visibility: visible;
+	-webkit-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+
+/* line 304, sass/templates/_attending.scss */
+
+#attendees .hexagon-in2:hover {
+	box-shadow: inset 0 0 0 0px #ffffff;
+}
+
+/* line 309, sass/templates/_attending.scss */
+
+#attendees #attendees article {
+	padding-top: 1em;
+	width: 820px;
+	margin: 0 auto;
+}
+
+/* line 315, sass/templates/_attending.scss */
+
+#attendees .attendee_item:nth-child(7n-2) {
+	margin-left: 101px;
+}
+
+/* line 318, sass/templates/_attending.scss */
+
+#attendees .attendee_item:nth-child(n+5) {
+	margin-top: -55px;
 }
 
 /*
@@ -1364,6 +1464,142 @@ OPTIONAL BASE STYLES
 	margin-right: 10px;
 }
 
+@media (max-width: 1024px) {
+
+/* line 36, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .event-dates {
+	font-size: 32px;
+}
+
+/* line 49, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-branding {
+	padding: 60px 0 10px;
+}
+
+/* line 63, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-title,
+.page-template-templatesattending-php .site-title a {
+	font-size: 80px;
+	line-height: 90px;
+}
+
+/* line 82, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-description {
+	font-size: 36px;
+	line-height: 42px;
+}
+
+/* line 125, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .entry-content {
+	margin: 0;
+}
+
+}
+
+@media (max-width: 1015px) {
+
+/* line 325, sass/templates/_attending.scss */
+
+#attendees {
+	width: 100%;
+}
+
+}
+
+@media (max-width: 820px) {
+
+/* line 331, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(5n-1) {
+	margin-left: 102px;
+}
+
+/* line 334, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(n+4) {
+	margin-top: -62px;
+}
+
+/* line 337, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(7n-2) {
+	margin-left: 0px;
+}
+
+/* line 340, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(n+5) {
+	margin-top: -56px;
+}
+
+/* line 343, sass/templates/_attending.scss */
+
+#attendees article {
+	width: 610px;
+}
+
+}
+
+@media (max-width: 640px) {
+
+/* line 36, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .event-dates {
+	font-size: 24px;
+}
+
+/* line 49, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-branding {
+	padding: 40px 0 0px;
+}
+
+/* line 63, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-title,
+.page-template-templatesattending-php .site-title a {
+	font-size: 40px;
+	line-height: 50px;
+}
+
+/* line 82, sass/templates/_attending.scss */
+
+.page-template-templatesattending-php .site-description {
+	font-size: 30px;
+	line-height: 34px;
+}
+
+/* line 349, sass/templates/_attending.scss */
+
+#attendees article {
+	width: 405px;
+}
+
+/* line 352, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(5n-1) {
+	margin-left: 0px;
+}
+
+/* line 355, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(3n) {
+	margin-left: 102px;
+}
+
+/* line 358, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(n+3) {
+	margin-top: -56px;
+}
+
+}
+
 @media screen and (max-width: 600px) {
 
 /* line 107, sass/partials/_navigation.scss */
@@ -1377,6 +1613,34 @@ OPTIONAL BASE STYLES
 
 .main-navigation ul {
 	display: none;
+}
+
+}
+
+@media (max-width: 450px) {
+
+/* line 364, sass/templates/_attending.scss */
+
+#attendees article {
+	width: 300px;
+}
+
+/* line 367, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(3n) {
+	margin-left: 0px;
+}
+
+/* line 370, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(2n) {
+	margin-left: 102px;
+}
+
+/* line 373, sass/templates/_attending.scss */
+
+.attendee_item:nth-child(n+2) {
+	margin-top: -56px;
 }
 
 }

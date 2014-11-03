@@ -47,11 +47,13 @@ and Blueprint http://www.blueprintcss.org/
 
 --------------------------------------------------------------*/
 
+@import "susy";
+
+@import "partials/media-queries";
 @import "partials/variables";
 @import "partials/mixins";
 
 @import "partials/reset";
-@import "susy";
 
 @import "partials/typography";
 @import "partials/elements";

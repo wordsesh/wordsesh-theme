@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 	<?php
 		$limit = intval( $settings['homepage_our_team_number'] );
-		do_action( 'woothemes_our_team', array( 'limit' => $limit ) );
+		do_action( 'woothemes_our_team', array( 'limit' => '50' ) );
 	?>
 
 </section><!-- /#our-team -->

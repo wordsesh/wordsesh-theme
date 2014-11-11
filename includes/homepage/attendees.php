@@ -16,6 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			'homepage_our_team_byline' => __( 'The Most Awesome', 'woothemes' ),
 			'homepage_our_team_number' => '5'
 		);
+		
+	$settings = woo_get_dynamic_values( $settings );
 
 ?>
 

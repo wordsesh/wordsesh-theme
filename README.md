@@ -2,7 +2,7 @@ WordSesh Theme
 ==============
 A theme that makes WordSesh possible.
 
-Welcome to the official WordSesh theme repository! You might think I'm *"just"* a theme but I'm actually more than just that. I'm an open source platform, built by the the [WordPress](http://wordpress.org/) community to power the entire WordSesh event. 
+Welcome to the official WordSesh theme repository! I'm a child theme of Hub (by WooThemes) and along with [WordPress](http://wordpress.org/) and some love from the community I power the entire WordSesh event. 
 
 If you'd like to help out, make sure to check out the contributing guidelines [here](https://github.com/wordsesh/wordsesh-theme/blob/master/CONTRIBUTING.md)!
 

@@ -132,15 +132,15 @@ a.button:hover {
 	width: 10% !important;
 }
 
-@media only screen and (min-width: 640px) {
-	#our-team .widget_woothemes_our_team h3.member {
-		display: none;
-	}
-}
-
 #our-team .widget_woothemes_our_team h3.member {
 	color: #fff !important;
 	font-size: 1.2em;
+}
+
+@media only screen and (max-width: 640px) {
+	#our-team .widget_woothemes_our_team h3.member {
+		display: none;
+	}
 }
 
 #our-team .widget_woothemes_our_team .team-member .team-member-content {

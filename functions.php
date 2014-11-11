@@ -94,8 +94,8 @@ add_action( 'init', 'ws_attendee_register_post_type' );
 
 // Add Attendee from Gravity Form Entry
 function ws_add_attendee( $entry, $form ){
-	$attendee_first_name 	= $entry["1.3"];
-	$attendee_last_name		= $entry["1.6"];
+	$attendee_first_name 	= ucfirst( $entry["1.3"] );
+	$attendee_last_name		= ucfirst( $entry["1.6"] );
 	$attendee_email 		= $entry['2'];
 	$attendee_city 			= $entry['3'];
 	$attendee_country 		= $entry['4'];
@@ -106,13 +106,13 @@ function ws_add_attendee( $entry, $form ){
 	  'post_content'  => '',
 	  'post_status'   => 'pending',
 	  'post_author'   => 1,
-	  'post_type'     => 'ws_attendee'
+	  'post_type'     => 'team-member'
 	);
 	$attendee_id = wp_insert_post( $attendee );
 	
 	update_post_meta( $attendee_id, 'ws_attendee_first_name', esc_html( $attendee_first_name ) );
 	update_post_meta( $attendee_id, 'ws_attendee_last_name', esc_html( $attendee_last_name ) );
-	update_post_meta( $attendee_id, 'ws_attendee_email', esc_html( $attendee_email ) );
+	update_post_meta( $attendee_id, '_gravatar_email', esc_html( $attendee_email ) );
 	update_post_meta( $attendee_id, 'ws_attendee_city', esc_html( $attendee_city ) );
 	update_post_meta( $attendee_id, 'ws_attendee_country', esc_html( $attendee_country ) );
 	update_post_meta( $attendee_id, 'ws_attendee_state', esc_html( $attendee_state ) );

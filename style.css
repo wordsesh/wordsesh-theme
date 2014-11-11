@@ -128,9 +128,23 @@ a.button:hover {
 	text-align: center;
 }
 
+#our-team .widget_woothemes_our_team .team-member {
+	width: 10%;
+}
+
+@media only screen and (min-width: 640px) {
+	#our-team .widget_woothemes_our_team .team-member {
+		width: 25% !important;
+	}
+	
+	#our-team .widget_woothemes_our_team h3.member {
+		display: none;
+	}
+}
+
 #our-team .widget_woothemes_our_team h3.member {
 	color: #fff !important;
-	font-size: 2em;
+	font-size: 1.2em;
 }
 
 #our-team .widget_woothemes_our_team .team-member .team-member-content {

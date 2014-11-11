@@ -52,6 +52,14 @@ a.button:hover {
 
 #intro-message {
 	background: #fff;
+	color: #333;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	#intro-message .wrapper {
+		max-width: 50%;
+	}
 }
 
 #intro-message h2 {
@@ -68,9 +76,8 @@ a.button:hover {
 	background-image: url('ws-logo-hover.png');
 }
 
-
-#intro-message {
-	color: #333;
+#intro-message .wrapper {
+	text-align: center;
 }
 
 #intro-message p {

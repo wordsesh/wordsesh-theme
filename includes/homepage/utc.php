@@ -19,7 +19,7 @@ $about_options = array(
 		</header>
 		<?php endif; ?>
 		
-		<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/clock.png" width="75" height="75" /></p>
+		<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/clock.png" width="100" height="100" /></p>
 		<p>Since people will be tuning in to WordSesh from all over the globe we needed a way to standardize the time.</p>
 		<p><a class="button" href="http://arewemeetingyet.com/UTC/2014-12-20/00:00/WordSesh" target="_blank">When Does WordSesh Start for You?</a></p>
 		

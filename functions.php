@@ -72,26 +72,6 @@ function wordsesh_display_attend() {
 	get_template_part( 'includes/homepage/attend' );
 }
 
-// Register Attendee Post Type
-function ws_attendee_register_post_type() {
-	
-	$args = array(
-		'label' => __( 'Attendee', 'wordsesh' ),
-		'public' => true,
-		'publicly_queryable' => true,
-		'exclude_from_search' => false,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'has_archive' => true,
-		'rewrite' => true,
-		'query_var' => true,
-		'supports' => array( 'title', 'custom-fields' )
-	);
-	
-	register_post_type( 'ws_attendee', $args );
-}
-add_action( 'init', 'ws_attendee_register_post_type' );
-
 // Add Attendee from Gravity Form Entry
 function ws_add_attendee( $entry, $form ){
 	$attendee_first_name 	= ucfirst( $entry["1.3"] );

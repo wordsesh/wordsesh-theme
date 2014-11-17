@@ -2,7 +2,7 @@
 
 add_action( 'init', function() {
 	remove_action( 'homepage', 'woo_display_popular_posts', 20 );
-	remove_action( 'homepage', 'woo_display_testimonials', 30 );
+	// remove_action( 'homepage', 'woo_display_testimonials', 30 );
 	remove_action( 'homepage', 'woo_display_sensei', 40 );
 	remove_action( 'homepage', 'woo_display_recent_posts', 50 );
 	remove_action( 'homepage', 'woo_display_our_team', 60 );

@@ -147,6 +147,14 @@ a.button:hover {
 	background: rgba(146, 255, 120, 0.8);
 }
 
+#testimonials #testimonials-holder {
+	background: #333333;
+}
+
+#testimonials #testimonials-bg {
+	background-size: cover;
+}
+
 #attend p {
 	font-size: 1.5em;
 	line-height: 1.5em;

@@ -1,8 +1,8 @@
 <?php
 
 add_action( 'init', function() {
+	
 	remove_action( 'homepage', 'woo_display_popular_posts', 20 );
-	// remove_action( 'homepage', 'woo_display_testimonials', 30 );
 	remove_action( 'homepage', 'woo_display_sensei', 40 );
 	remove_action( 'homepage', 'woo_display_recent_posts', 50 );
 	remove_action( 'homepage', 'woo_display_our_team', 60 );
@@ -10,8 +10,45 @@ add_action( 'init', function() {
 	
 	add_action( 'homepage', 'wordsesh_display_about', 20 );
 	add_action( 'homepage', 'wordsesh_display_utc', 30 );
+	add_action( 'homepage', 'woo_display_popular_posts', 35 );
 	add_action( 'homepage', 'wordsesh_display_attendees', 40 );
 	add_action( 'homepage', 'wordsesh_display_attend', 99 );
+
+
+	$speakers_labels = array(
+		'name'               => 'Speakers',
+		'singular_name'      => 'Speaker',
+		'menu_name'          => 'Speakers',
+		'name_admin_bar'     => 'Speaker',
+		'add_new'            => 'Add New',
+		'add_new_item'       => 'Add New Speaker',
+		'new_item'           => 'New Speaker',
+		'edit_item'          => 'Edit Speaker',
+		'view_item'          => 'View Speaker',
+		'all_items'          => 'All Speakers',
+		'search_items'       => 'Search Speakers',
+		'parent_item_colon'  => 'Parent Speakers:',
+		'not_found'          => 'No speakers found.',
+		'not_found_in_trash' => 'No speakers found in Trash.'
+	);
+
+	$speakers_args = array(
+		'labels'             => $speakers_labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'speaker' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'custom-fields' )
+	);
+
+	register_post_type( 'speaker', $speakers_args );
+	
 });
 
 add_action( 'wp_head', function() { ?>

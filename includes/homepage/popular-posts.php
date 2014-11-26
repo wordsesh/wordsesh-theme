@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 <section id="popular-posts" class="home-section">
 
-	<div class="wrapper">
+	<div id="speakers" class="wrapper">
 
 		<?php if ( ( '' != $settings['homepage_popular_posts_title'] ) || ( '' != $settings['homepage_popular_posts_byline'] ) ): ?>
 		<header class="section-title">

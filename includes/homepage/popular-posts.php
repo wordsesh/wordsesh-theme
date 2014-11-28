@@ -70,6 +70,14 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 					
 					<h3><?php the_title(); ?></h3>
 					
+					<?php
+					$company = get_post_meta( get_the_ID(), 'ws_speaker_company', true );
+					if ( ! empty( $company) ) { ?>
+					
+						<p><?php echo $company; ?></p>
+						
+					<?php } ?>
+					
 				</li>
 
 			<?php endwhile; ?>

@@ -29,21 +29,21 @@ a.button:hover {
 }
 
 @media only screen and (min-width: 768px) {
-	
+
 	#navigation {
 		width: 50% !important;
 	}
-	
+
 	#navigation .nav a {
 		-webkit-transition: margin 0.2s ease;
 		-moz-transition: margin 0.2s ease;
 		transition: margin 0.2s ease;
 	}
-	
+
 	#navigation .nav a:hover {
 		margin-top: -5px;
 	}
-	
+
 }
 
 #logo img {
@@ -63,7 +63,7 @@ a.button:hover {
 }
 
 #intro-message h2 {
-	background: url('ws-logo.png') no-repeat scroll 50% 0 transparent;
+	background: url('ws-logo-sprite.png') no-repeat scroll 0 0 transparent;
 	height: 300px;
 	width: 300px;
 	margin: 0 auto;
@@ -73,7 +73,7 @@ a.button:hover {
 }
 
 #intro-message h2:hover {
-	background-image: url('ws-logo-hover.png');
+	background-position: -300px 0;
 }
 
 #intro-message .wrapper {
@@ -106,15 +106,15 @@ a.button:hover {
 }
 
 @media only screen and (max-width: 480px) {
-	
+
 	.home-section {
 		text-align: center;
 	}
-	
+
 	.home-section header.section-title:after {
 		width: 100%;
 	}
-	
+
 	#about .block {
 		width: 100%;
 	}

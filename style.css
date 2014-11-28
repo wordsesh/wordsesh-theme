@@ -86,6 +86,20 @@ a.button:hover {
 	text-align: center;
 }
 
+.slideInLeft {
+    -webkit-transform: translateX(-2000px);
+    -moz-transform: translateX(-2000px);
+    -o-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+}
+
+.slideInRight {
+    -webkit-transform: translateX(2000px);
+    -moz-transform: translateX(2000px);
+    -o-transform: translateX(2000px);
+    transform: translateX(2000px);
+}
+
 #about {
 	background: #f5f5f4;
 	min-height: 360px;

@@ -12,6 +12,30 @@
 -------------------------------------------------------------- */
 @import url('../hub/style.css');
 
+#siteground {
+	background: url( 'red-tile.png') repeat scroll 0 0 transparent;
+}
+
+.sg-inner {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	line-height: 24px;
+	padding: 1em;
+}
+
+.sg-inner p,
+.sg-inner a {
+	color: #fff !important;
+	margin: 0;
+	padding: 0;
+}
+
+.sg-inner span {
+	color: #fffb61;
+}
+
 #header-wrapper {
 	background: #fff;
 }

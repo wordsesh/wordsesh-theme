@@ -144,3 +144,27 @@ function get_avatar_url( $author_id, $size ) {
     return ( $matches[1] );
 }
 add_action( 'gform_after_submission', 'ws_add_attendee', 10, 2 );
+
+function ws_add_google_fonts () { ?>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<?php }
+add_action( 'wp_head', 'ws_add_google_fonts' );
+
+function ws_add_siteground_banner() { ?>
+	
+	<?php if ( current_user_can( 'manage_options' ) ) { ?>
+
+		<div id="siteground">
+	
+			<div class="sg-inner">
+			
+				<p><a href="http://www.siteground.com/wordpress-hosting.htm" target="_blank">WordSesh is powered by SiteGround. Check out their <span>60% OFF SPECIAL DEAL</span>!</a></p>
+			
+			</div>
+	
+		</div>
+	
+	<?php } ?>
+	
+<?php }
+add_action( 'woo_top', 'ws_add_siteground_banner' );

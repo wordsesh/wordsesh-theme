@@ -3,13 +3,15 @@
 add_action( 'init', function() {
 	
 	remove_action( 'homepage', 'woo_display_popular_posts', 20 );
+	remove_action( 'homepage', 'woo_display_testimonials', 30 );
 	remove_action( 'homepage', 'woo_display_sensei', 40 );
 	remove_action( 'homepage', 'woo_display_recent_posts', 50 );
 	remove_action( 'homepage', 'woo_display_our_team', 60 );
 	remove_action( 'homepage', 'woo_display_featured_products', 70 );
 	
 	add_action( 'homepage', 'wordsesh_display_about', 20 );
-	add_action( 'homepage', 'wordsesh_display_utc', 30 );
+	add_action( 'homepage', 'wordsesh_display_utc', 25 );
+	add_action( 'homepage', 'woo_display_testimonials', 30 );
 	add_action( 'homepage', 'woo_display_popular_posts', 35 );
 	add_action( 'homepage', 'wordsesh_display_attendees', 40 );
 	add_action( 'homepage', 'wordsesh_display_attend', 99 );

@@ -151,20 +151,16 @@ function ws_add_google_fonts () { ?>
 add_action( 'wp_head', 'ws_add_google_fonts' );
 
 function ws_add_siteground_banner() { ?>
-	
-	<?php if ( current_user_can( 'manage_options' ) ) { ?>
 
-		<div id="siteground">
-	
-			<div class="sg-inner">
-			
-				<p><a href="http://www.siteground.com/wordpress-hosting.htm" target="_blank">WordSesh is powered by SiteGround. Check out their <span>60% OFF SPECIAL DEAL</span>!</a></p>
-			
-			</div>
-	
+	<div id="siteground">
+
+		<div class="sg-inner">
+		
+			<p><a href="http://www.siteground.com/wordpress-hosting.htm" target="_blank">WordSesh is powered by SiteGround. Check out their <span>60% OFF SPECIAL DEAL</span>!</a></p>
+		
 		</div>
-	
-	<?php } ?>
+
+	</div>
 	
 <?php }
 add_action( 'woo_top', 'ws_add_siteground_banner' );

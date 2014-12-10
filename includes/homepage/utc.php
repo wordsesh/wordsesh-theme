@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 $about_options = array(
 	'homepage_about_title' => __( 'UTC?', 'woothemes' ),
-	'homepage_about_byline' => __( 'What the hell is this', 'woothemes' ),
+	'homepage_about_byline' => __( 'What is this UTC+0 you speak of?!', 'woothemes' ),
 	'homepage_about_number' => 9,
 );
 ?>

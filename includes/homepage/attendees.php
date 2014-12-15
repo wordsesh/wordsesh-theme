@@ -39,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		do_action( 'woothemes_our_team', array( 'limit' => '50' ) );
 	?>
 	
-	<?php $attendee_count = wp_count_posts( 'speaker' )->publish; ?>
+	<?php $attendee_count = wp_count_posts( 'team-member' )->publish; ?>
 	
 	<h2 class="attendee-count">That's just a few. There are over <span><?php echo $attendee_count; ?></span> of them!<h2>
 

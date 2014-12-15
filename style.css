@@ -188,6 +188,10 @@ a.button:hover {
 	line-height: 1.25em;
 }
 
+#our-team {
+	background: #fff;
+}
+
 #our-team .widget_woothemes_our_team .team-member {
 	width: 10% !important;
 }
@@ -427,6 +431,10 @@ button.button:active,
 }
 
 /* Badges */
+#badges {
+	background: #f5f5f4;
+}
+
 .badges-inner, #badges pre { text-align: center; }
 
 #badges img {

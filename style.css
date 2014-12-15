@@ -833,6 +833,8 @@ button.button:active,
 h2.attendee-count {
 	font-weight: lighter;
 	text-align: center;
+	padding-top: 18px;
+	clear: both;
 }
 
 .attendee-count span {

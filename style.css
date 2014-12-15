@@ -425,3 +425,33 @@ button.button:active,
 #timeline .archives_list .comments a:after {
 	border: 0.3em solid #ff9d83;
 }
+
+/* Badges */
+.badges-inner, #badges pre { text-align: center; }
+
+#badges img {
+	padding: 0 0 20px;
+}
+
+#badges pre {
+	width: 80%;
+	max-width: 300px;
+	margin: 10px auto 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	.badge-left {
+		float: left;
+		width: 50%;
+	}
+
+	.badge-right {
+		float: right;
+		width: 50%;
+	}
+
+	#badges pre {
+		width: auto;
+		max-width: 90%;
+	}
+}

@@ -14,7 +14,8 @@ add_action( 'init', function() {
 	add_action( 'homepage', 'woo_display_testimonials', 30 );
 	add_action( 'homepage', 'woo_display_popular_posts', 35 );
 	add_action( 'homepage', 'wordsesh_display_attendees', 40 );
-	add_action( 'homepage', 'wordsesh_display_attend', 99 );
+	add_action( 'homepage', 'wordsesh_display_attend', 90 );
+	add_action( 'homepage', 'wordsesh_display_badges', 95 );
 
 	$speakers_labels = array(
 		'name'               => 'Speakers',
@@ -108,6 +109,10 @@ function wordsesh_display_attendees() {
 
 function wordsesh_display_attend() {
 	get_template_part( 'includes/homepage/attend' );
+}
+
+function wordsesh_display_badges() {
+	get_template_part( 'includes/homepage/badges' );
 }
 
 // Add Attendee from Gravity Form Entry

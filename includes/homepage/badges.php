@@ -1,22 +1,13 @@
-<?php
-if ( ! defined( 'ABSPATH' ) ) exit;
-
-$about_options = array(
-	'homepage_badges_title' => __( 'Badges', 'woothemes' ),
-	'homepage_badges_byline' => __( 'Tell the World!', 'woothemes' ),
-);
-?>
+<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 
 <section id="badges" class="home-section">
 
 	<div class="wrapper">
 
-		<?php if ( ( '' != $about_options['homepage_badges_title'] ) || ( '' != $about_options['homepage_badges_byline'] ) ): ?>
 		<header class="section-title">
-			<?php if ( '' != $about_options['homepage_badges_byline'] ): ?><span class="heading"><?php echo stripslashes( esc_html( $about_options['homepage_badges_byline'] ) ); ?></span><?php endif; ?>
-			<?php if ( '' != $about_options['homepage_badges_title'] ): ?><h1><?php echo stripslashes( esc_html( $about_options['homepage_badges_title'] ) ); ?></h1><?php endif; ?>
+			<span class="heading"><?php _e( 'Tell the World!', 'woothemes' ); ?></span>
+			<h1><?php _e( 'Badges', 'woothemes' ); ?></h1>
 		</header>
-		<?php endif; ?>
 		
 		<div class="badges-inner">
 		

@@ -12,8 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 
 	$settings = array(
-			'homepage_popular_posts_title' => __( 'Most Commented Articles', 'woothemes' ),
-			'homepage_popular_posts_byline' => __( 'Popular Posts', 'woothemes' ),
+			'homepage_popular_posts_title' => __( '', 'woothemes' ),
+			'homepage_popular_posts_byline' => __( '', 'woothemes' ),
 			'homepage_popular_posts_number' => 3,
 			'homepage_popular_posts_period' => 'week',
 

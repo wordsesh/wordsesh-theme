@@ -12,8 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 
 	$settings = array(
-			'homepage_our_team_title' => __( 'Attendees!', 'woothemes' ),
-			'homepage_our_team_byline' => __( 'The Most Awesome', 'woothemes' ),
+			'homepage_our_team_title' => __( '', 'woothemes' ),
+			'homepage_our_team_byline' => __( '', 'woothemes' ),
 			'homepage_our_team_number' => '5'
 		);
 		

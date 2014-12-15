@@ -1,23 +1,13 @@
-<?php
-if ( ! defined( 'ABSPATH' ) ) exit;
-
-$about_options = array(
-	'homepage_about_title' => __( 'About WordSesh', 'woothemes' ),
-	'homepage_about_byline' => __( 'Everything You Need To Know', 'woothemes' ),
-	'homepage_about_number' => 9,
-);
-?>
+<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 
 <section id="about" class="home-section">
 
 	<div class="wrapper">
 
-		<?php if ( ( '' != $about_options['homepage_about_title'] ) || ( '' != $about_options['homepage_about_byline'] ) ): ?>
 		<header class="section-title">
-			<?php if ( '' != $about_options['homepage_about_byline'] ): ?><span class="heading"><?php echo stripslashes( esc_html( $about_options['homepage_about_byline'] ) ); ?></span><?php endif; ?>
-			<?php if ( '' != $about_options['homepage_about_title'] ): ?><h1><?php echo stripslashes( esc_html( $about_options['homepage_about_title'] ) ); ?></h1><?php endif; ?>
+			<span class="heading"><?php _e( 'Everything You Need To Know', 'woothemes' ); ?></span>
+			<h1><?php _e( 'About WordSesh', 'woothemes' ); ?></h1>
 		</header>
-		<?php endif; ?>
 		
 		<div class="block">
 			<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/icon-1.png" width="75" height="75" /></p>

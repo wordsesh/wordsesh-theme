@@ -1,22 +1,13 @@
-<?php
-if ( ! defined( 'ABSPATH' ) ) exit;
-
-$about_options = array(
-	'homepage_schedule_title' => __( 'Schedule', 'woothemes' ),
-	'homepage_schedule_byline' => __( 'A Kick-Ass', 'woothemes' ),
-);
-?>
+<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 
 <section id="schedule" class="home-section">
 
 	<div class="wrapper">
 
-		<?php if ( ( '' != $about_options['homepage_schedule_title'] ) || ( '' != $about_options['homepage_schedule_byline'] ) ): ?>
 		<header class="section-title">
-			<?php if ( '' != $about_options['homepage_schedule_byline'] ): ?><span class="heading"><?php echo stripslashes( esc_html( $about_options['homepage_schedule_byline'] ) ); ?></span><?php endif; ?>
-			<?php if ( '' != $about_options['homepage_schedule_title'] ): ?><h1><?php echo stripslashes( esc_html( $about_options['homepage_schedule_title'] ) ); ?></h1><?php endif; ?>
+			<span class="heading"></span>
+			<h1><?php _e( 'Schedule', 'woothemes' ); ?></h1>
 		</header>
-		<?php endif; ?>
 		
 		<div class="col-full">
 
@@ -26,6 +17,7 @@ $about_options = array(
 			$query = new WP_Query( $args );
 			
 			    if ( $query->have_posts() ) : $count = 0;
+				
 					while ( $query->have_posts() ) : $query->the_post(); $count++;
 
 					$utc_hour = absint($count - 1); ?>
@@ -68,8 +60,6 @@ $about_options = array(
 			    <?php endwhile; ?>
 
 			<?php endif; wp_reset_postdata(); ?>
-
-			<h2 class="widget-title schedule-kick-ass">We told you it was kick-ass!</h2>
 
 		</div>
 

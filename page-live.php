@@ -11,7 +11,7 @@ get_header();
 	 
 	 <div class="wrapper">
 
-		 <iframe width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" src="http://crowdcast.io/e/wordsesh-test?navlinks=false"></iframe>
+		 <iframe width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" src="http://crowdcast.io/e/wordsesh-test?navlinks=false"></iframe>
 		 
 	 </div>
 

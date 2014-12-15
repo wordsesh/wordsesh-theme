@@ -8,6 +8,15 @@ function woo_load_frontend_css () {
 	wp_enqueue_style( 'woo-layout' );
 }
 
+function wordsesh_is_live() {
+	$wordsesh_live = 1;
+	if ( is_user_logged_in() || $wordsesh_live == 1 ) {
+		return false;
+	} else {
+		return false;
+	}
+}
+
 add_action( 'init', function() {
 	
 	remove_action( 'homepage', 'woo_display_popular_posts', 20 );
@@ -19,6 +28,7 @@ add_action( 'init', function() {
 	
 	add_action( 'homepage', 'wordsesh_display_about', 20 );
 	add_action( 'homepage', 'wordsesh_display_utc', 25 );
+	add_action( 'homepage', 'wordsesh_display_schedule', 28 );
 	add_action( 'homepage', 'woo_display_testimonials', 30 );
 	add_action( 'homepage', 'woo_display_popular_posts', 35 );
 	add_action( 'homepage', 'wordsesh_display_attendees', 40 );
@@ -58,6 +68,40 @@ add_action( 'init', function() {
 	);
 
 	register_post_type( 'speaker', $speakers_args );
+	
+	// Sessions for Room 1
+	$sessions_labels = array(
+		'name'               => 'Sessions',
+		'singular_name'      => 'Session',
+		'all_items'			 => 'All Sessions',
+		'add_new'            => 'Add New',
+		'add_new_item'       => 'Add New Session',
+		'edit_item'          => 'Edit Session',
+		'new_item'           => 'New Session',
+		'all_items'          => 'All Sessions',
+		'view_item'          => 'View Session',
+		'search_items'       => 'Search Sessions',
+		'not_found'          => 'No sessions found',
+		'not_found_in_trash' => 'No sessions found in Trash',
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Sessions'
+	);
+
+	$sessions_args = array(
+		'labels'             => $sessions_labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'session' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' )
+	);
+	register_post_type( 'wordsesh_slot', $sessions_args );
 	
 });
 
@@ -109,6 +153,10 @@ function wordsesh_display_about() {
 
 function wordsesh_display_utc() {
 	get_template_part( 'includes/homepage/utc' );
+}
+
+function wordsesh_display_schedule() {
+	get_template_part( 'includes/homepage/schedule' );
 }
 
 function wordsesh_display_attendees() {

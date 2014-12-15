@@ -275,6 +275,10 @@ code {
     background: #ff9d83;
 }
 
+#footer a {
+	color: #fff !important;
+}
+
 .archive-header:after {
     background: #ff9d83;
 }

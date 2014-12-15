@@ -5,7 +5,7 @@
 	<div class="wrapper">
 
 		<header class="section-title">
-			<span class="heading"><?php _e( 'A Kick-Ass', 'woothemes' ); ?><</span>
+			<span class="heading"><?php _e( 'A Kick-Ass', 'woothemes' ); ?></span>
 			<h1><?php _e( 'Schedule', 'woothemes' ); ?></h1>
 		</header>
 		

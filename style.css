@@ -757,6 +757,10 @@ button.button:active,
     #schedule .timeline-post-24 {
         left: 0px !important;
     }
+	
+    #schedule .timeline-post-25 {
+        left: 300px !important;
+    }
 
     #schedule .timeline-post:nth-child(odd) {
         top: auto !important;

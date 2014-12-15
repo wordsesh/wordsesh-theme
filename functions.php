@@ -1,5 +1,13 @@
 <?php
 
+function woo_load_frontend_css () {
+	$ver = time();
+	wp_register_style( 'theme-stylesheet', get_stylesheet_uri(), false, $ver );
+	wp_register_style( 'woo-layout', get_template_directory_uri() . '/css/layout.css' );
+	wp_enqueue_style( 'theme-stylesheet' );
+	wp_enqueue_style( 'woo-layout' );
+}
+
 add_action( 'init', function() {
 	
 	remove_action( 'homepage', 'woo_display_popular_posts', 20 );

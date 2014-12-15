@@ -134,6 +134,10 @@ add_action( 'wp_head', function() { ?>
 // Only Allow Access to Home
 function wordsesh_403_error( $template ) {
 
+	if ( is_page('live') ) {
+		return $template;
+	}
+
 	if ( ! is_front_page() ) {
 
 		wp_redirect( home_url() );

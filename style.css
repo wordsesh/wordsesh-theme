@@ -630,7 +630,7 @@ button.button:active,
         width: 100%;
         overflow-x: scroll;
         overflow-y: hidden;
-        background: url('schedule.png') repeat-x scroll 0 134px #f5f5f4;
+        background: url('schedule.png') repeat-x scroll 0 155px #f5f5f4;
     }
 
     #schedule h2.widget-title {

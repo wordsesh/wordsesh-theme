@@ -5,7 +5,7 @@
 	<div class="wrapper">
 
 		<header class="section-title">
-			<span class="heading"></span>
+			<span class="heading"><?php _e( 'A Kick-Ass', 'woothemes' ); ?><</span>
 			<h1><?php _e( 'Schedule', 'woothemes' ); ?></h1>
 		</header>
 		
@@ -60,6 +60,8 @@
 			    <?php endwhile; ?>
 
 			<?php endif; wp_reset_postdata(); ?>
+			
+			<h2 class="widget-title schedule-kick-ass">We told you it was kick-ass!</h2>
 
 		</div>
 

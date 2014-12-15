@@ -829,6 +829,16 @@ button.button:active,
     }
 }
 
+/* Attendees */
+h2.attendee-count {
+	font-weight: lighter;
+	text-align: center;
+}
+
+.attendee-count span {
+	font-weight: bolder;
+}
+
 /* Badges */
 #badges {
     background: #f5f5f4;

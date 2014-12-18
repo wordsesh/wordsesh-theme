@@ -29,6 +29,8 @@
 						<?php
 						if ( $wordsesh_time_slot = get_post_meta( get_the_ID(), 'wordsesh_time', true ) ) :
 
+							$live_now = '';
+
 							if ( wordsesh_is_live() ) {
 								if ( $utc_hour == date( 'G' ) )
 									$live_now = '<span class="live-now"> - Live Now</span>';

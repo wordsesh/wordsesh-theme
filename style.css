@@ -138,19 +138,20 @@ a.button:hover {
 
 /* Countdown css */
 .clock {
-	width: 712px;
-	height: 165px;
+	width: 100%;
 	margin: 0px auto;
 }
 
 .clock .canvas {
-	float:left;
+	/* float:left; */
 	background: url(images/circle-bg.png) top center transparent no-repeat;
 	position: relative;
 	width: 148px;
 	height: 148px;
-	margin:10px 40px 0 0px;
+	margin: 10px 0px 0 0px;
 	padding-bottom:10px;
+	display: inline-block;
+	text-align: center;
 }
 
 .clock .last-one {
@@ -1067,9 +1068,3 @@ h2.attendee-count {
 .page-template-page-live-php div#content {
 	padding: 0 0 40px;
 }
-
-
-
-
-
-

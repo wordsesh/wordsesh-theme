@@ -71,7 +71,7 @@
              var context = canvas.getContext('2d');
              var x = canvas.width / 2;
              var y = canvas.height / 2;
-             var radius = 69;
+             var radius = 60;
              var startAngle  = degree(0)
              var endAngle    =  degree(hours);
              var counterClockwise = false;
@@ -97,7 +97,7 @@
              var context = canvas.getContext('2d');
              var x = canvas.width / 2;
              var y = canvas.height / 2;
-             var radius = 69;
+             var radius = 60;
              var startAngle  = degree(0)
              var endAngle    =  degree(minutes);
              var counterClockwise = false;
@@ -123,7 +123,7 @@
              var context = canvas.getContext('2d');
              var x = canvas.width / 2;
              var y = canvas.height / 2;
-             var radius = 69;
+             var radius = 60;
              var startAngle  = degree(0)
              var endAngle    =  degree(seconds);
              var counterClockwise = false;
@@ -149,7 +149,7 @@
              var context = canvas.getContext('2d');
              var x = canvas.width / 2;
              var y = canvas.height / 2;
-             var radius = 69;
+             var radius = 60;
              var startAngle  = degree(0)
              var endAngle    =  degree(days);
              var counterClockwise = false;

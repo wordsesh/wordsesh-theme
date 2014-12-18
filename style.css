@@ -110,7 +110,7 @@ a.button:hover {
 }
 
 /* Countdown css */
-.clock {	
+.clock {
 	width: 712px;
 	height: 165px;
 	margin: 0px auto;
@@ -147,7 +147,7 @@ a.button:hover {
 	text-align: center;
 	font-weight: bold;
 	font-size: 70px;
-	
+
     -o-transition-property: none !important;
     -moz-transition-property: none !important;
     -ms-transition-property: none !important;
@@ -955,8 +955,9 @@ h2.attendee-count {
 	width: 100%;
 	overflow: hidden;
 	height: 40px;
-	margin-top: -3.631em;
-	margin-bottom: 3.631em;
+	top: 3em;
+	position: relative;
+	z-index: 1;
 }
 .clock-label {
 	position: absolute;

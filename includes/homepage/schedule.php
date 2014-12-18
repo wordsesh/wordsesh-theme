@@ -1,8 +1,8 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 
-<section id="schedule" class="home-section">
+<?php include( 'clock.php' ); ?>
 
-	<?php include( 'clock.php' ); ?>
+<section id="schedule" class="home-section">
 
 	<div class="wrapper">
 

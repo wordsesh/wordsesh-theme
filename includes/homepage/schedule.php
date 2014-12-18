@@ -2,22 +2,24 @@
 
 <section id="schedule" class="home-section">
 
+	<?php include( 'clock.php' ); ?>
+
 	<div class="wrapper">
 
 		<header class="section-title">
 			<span class="heading"><?php _e( 'A Kick-Ass', 'woothemes' ); ?></span>
 			<h1><?php _e( 'Schedule', 'woothemes' ); ?></h1>
 		</header>
-		
+
 		<div class="col-full">
 
 			<?php
-			
+
 			$args = array( 'post_type' => 'wordsesh_slot', 'posts_per_page' => -1, 'order' => 'ASC' );
 			$query = new WP_Query( $args );
-			
+
 			    if ( $query->have_posts() ) : $count = 0;
-				
+
 					while ( $query->have_posts() ) : $query->the_post(); $count++;
 
 					$utc_hour = absint($count - 1); ?>
@@ -60,7 +62,7 @@
 			    <?php endwhile; ?>
 
 			<?php endif; wp_reset_postdata(); ?>
-			
+
 			<h2 class="widget-title schedule-kick-ass">We told you it was kick-ass!</h2>
 
 		</div>

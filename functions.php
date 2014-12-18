@@ -6,6 +6,8 @@ function woo_load_frontend_css () {
 	wp_register_style( 'woo-layout', get_template_directory_uri() . '/css/layout.css' );
 	wp_enqueue_style( 'theme-stylesheet' );
 	wp_enqueue_style( 'woo-layout' );
+
+	wp_enqueue_script( 'script-name', get_stylesheet_directory_uri() . '/includes/homepage/js/clock.js', array( 'jquery' ), '1.0.0', true );
 }
 
 function wordsesh_is_live() {
@@ -18,14 +20,14 @@ function wordsesh_is_live() {
 }
 
 add_action( 'init', function() {
-	
+
 	remove_action( 'homepage', 'woo_display_popular_posts', 20 );
 	remove_action( 'homepage', 'woo_display_testimonials', 30 );
 	remove_action( 'homepage', 'woo_display_sensei', 40 );
 	remove_action( 'homepage', 'woo_display_recent_posts', 50 );
 	remove_action( 'homepage', 'woo_display_our_team', 60 );
 	remove_action( 'homepage', 'woo_display_featured_products', 70 );
-	
+
 	add_action( 'homepage', 'wordsesh_display_about', 20 );
 	add_action( 'homepage', 'wordsesh_display_utc', 25 );
 	add_action( 'homepage', 'wordsesh_display_schedule', 28 );
@@ -68,7 +70,7 @@ add_action( 'init', function() {
 	);
 
 	register_post_type( 'speaker', $speakers_args );
-	
+
 	// Sessions for Room 1
 	$sessions_labels = array(
 		'name'               => 'Sessions',
@@ -102,20 +104,20 @@ add_action( 'init', function() {
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' )
 	);
 	register_post_type( 'wordsesh_slot', $sessions_args );
-	
+
 });
 
 add_action( 'wp_head', function() { ?>
 	<script>
-	
+
 		jQuery( function($) {
-		
+
 			$.fn.preload = function() {
 			    this.each(function(){
 			        $('<img/>')[0].src = this;
 			    });
 			}
-		
+
 			var logo1 = '<?php echo get_stylesheet_directory_uri(); ?>/ws-logo.png';
 			var logo2 = '<?php echo get_stylesheet_directory_uri(); ?>/ws-logo.png';
 			var icon1 = '<?php echo get_stylesheet_directory_uri(); ?>/icon-1.png';
@@ -123,11 +125,11 @@ add_action( 'wp_head', function() { ?>
 			var icon3 = '<?php echo get_stylesheet_directory_uri(); ?>/icon-3.png';
 			var icon4 = '<?php echo get_stylesheet_directory_uri(); ?>/icon-4.png';
 			var clock = '<?php echo get_stylesheet_directory_uri(); ?>/clock.png';
-		
+
 			$([logo1, logo2, icon1, icon2, icon3, icon4]).preload();
-		
+
 		});
-		
+
 	</script>
 <?php });
 
@@ -177,7 +179,7 @@ function wordsesh_display_badges() {
 
 // Add Attendee from Gravity Form Entry
 function ws_add_attendee( $entry, $form ){
-	
+
 	$attendee_first_name 	= ucfirst( $entry["1.3"] );
 	$attendee_last_name		= ucfirst( $entry["1.6"] );
 	$attendee_email 		= $entry['2'];
@@ -193,14 +195,14 @@ function ws_add_attendee( $entry, $form ){
 	  'post_type'     => 'team-member'
 	);
 	$attendee_id = wp_insert_post( $attendee );
-	
+
 	update_post_meta( $attendee_id, 'ws_attendee_first_name', esc_html( $attendee_first_name ) );
 	update_post_meta( $attendee_id, 'ws_attendee_last_name', esc_html( $attendee_last_name ) );
 	update_post_meta( $attendee_id, '_gravatar_email', esc_html( $attendee_email ) );
 	update_post_meta( $attendee_id, 'ws_attendee_city', esc_html( $attendee_city ) );
 	update_post_meta( $attendee_id, 'ws_attendee_country', esc_html( $attendee_country ) );
 	update_post_meta( $attendee_id, 'ws_attendee_state', esc_html( $attendee_state ) );
-	
+
 }
 
 function get_avatar_url( $author_id, $size ) {
@@ -220,12 +222,12 @@ function ws_add_siteground_banner() { ?>
 	<div id="siteground">
 
 		<div class="sg-inner">
-		
+
 			<p><a href="http://www.siteground.com/wordpress-hosting.htm?afcode=d51dfdb812d1d9c0658730e48939225c" target="_blank">WordSesh is powered by SiteGround. Check out their <span>60% OFF SPECIAL DEAL</span>!</a></p>
-		
+
 		</div>
 
 	</div>
-	
+
 <?php }
 add_action( 'woo_top', 'ws_add_siteground_banner' );

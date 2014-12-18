@@ -70,7 +70,7 @@ $settings = woo_get_dynamic_values( $settings );
 				<div class="clearfix"></div>
 			</div>
 			
-			<p class="blastoff"><a href="#shedule">Until Blastoff!</a></p>
+			<p class="blastoff"><a href="#schedule">Until Blastoff!</a></p>
 		
 		<?php endif; ?>
 

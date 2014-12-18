@@ -260,6 +260,7 @@ a.button:hover {
 
 #popular-posts ul li {
     text-align: center;
+	height: 420px !important;
 }
 
 @media only screen and (max-width: 768px) {

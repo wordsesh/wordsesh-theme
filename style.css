@@ -52,6 +52,14 @@ a.button:hover {
     text-decoration: underline;
 }
 
+#navigation ul.nav > li.current-menu-item {
+    border-color: transparent;
+}
+
+#navigation ul.nav > li.current-menu-item:hover {
+    border-color: #f36557;
+}
+
 @media only screen and (min-width: 768px) {
 
     #navigation {

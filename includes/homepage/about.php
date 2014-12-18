@@ -9,11 +9,7 @@
 			<h1><?php _e( 'About WordSesh', 'woothemes' ); ?></h1>
 		</header>
 		
-		<?php if ( ! wordsesh_is_live() ) : ?>
-		
-			<p class="about-wordsesh">WordSesh is 1 full day of live WordPress presentations from all over the world streamed live to you wherever you may be. Oh, and it's FREE!</p>
-		
-		<?php endif; ?>
+		<p class="about-wordsesh">WordSesh is 1 full day of live WordPress presentations from all over the world streamed live to you wherever you may be. Oh, and it's FREE!</p>
 		
 		<div class="block">
 			<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/icon-1.png" width="75" height="75" /></p>

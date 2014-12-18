@@ -52,6 +52,14 @@ a.button:hover {
     text-decoration: underline;
 }
 
+#navigation ul.nav > li.current-menu-item {
+    border-color: transparent !important;
+}
+
+#navigation ul.nav > li.current-menu-item:hover {
+    border-color: #f36557;
+}
+
 @media only screen and (min-width: 768px) {
 
     #navigation {
@@ -77,6 +85,7 @@ a.button:hover {
     background: #fff;
     color: #333;
     text-align: center;
+	padding: 3em 0 0 !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -92,7 +101,7 @@ a.button:hover {
     margin: 0 auto;
     text-indent: -9999px;
     text-transform: capitalize;
-    padding: 0 0 1em;
+    padding: 0 0 0em;
 }
 
 #intro-message h2:hover {
@@ -107,6 +116,24 @@ a.button:hover {
     font-size: 2em;
     line-height: 1.4em;
     text-align: center;
+}
+
+#intro-message .blastoff {
+	padding: 1em 0 0;
+}
+
+.blastoff a, .blastoff a:hover {
+	color: #333 !important;
+}
+
+.blastoff a:hover {
+	text-decoration: underline;
+}
+
+#intro-message a.button {
+	font-size: 2em;
+	padding: 10px 40px;
+	margin: 1em 0 2em;
 }
 
 /* Countdown css */

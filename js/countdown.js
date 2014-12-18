@@ -168,6 +168,11 @@
              context.stroke();
 
              $(".days-val").text(days);
+			 
+			 if ( $(".days-val").html() == '1' ) {
+			 	 $(".days-text").html( 'Day' );
+			 }
+			 
          }
     };
 	

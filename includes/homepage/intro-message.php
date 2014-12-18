@@ -43,7 +43,7 @@ $settings = woo_get_dynamic_values( $settings );
 					<canvas id="days" width="148" height="148"></canvas>
 					<div class="info">
 						<p class="days-val">0</p>
-						<p class="text">Days</p>
+						<p class="text days-text">Days</p>
 					</div>
 				</div>
 				<div class="canvas">

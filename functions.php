@@ -13,11 +13,17 @@ function woo_load_frontend_css () {
 function wordsesh_is_live() {
 	$wordsesh_live = 0;
 	if ( is_user_logged_in() || $wordsesh_live == 1 ) {
-		return false;
+		return true;
 	} else {
 		return false;
 	}
 }
+
+function wordsesh_enqueue_scripts() {
+	wp_enqueue_script( 'countdown', get_stylesheet_directory_uri() . '/js/countdown.js', array( 'jquery' ), false, false );
+	wp_enqueue_script( 'wordsesh-js', get_stylesheet_directory_uri() . '/js/wordsesh.js', array( 'jquery', 'countdown' ), false, false );
+}
+add_action( 'wp_enqueue_scripts', 'wordsesh_enqueue_scripts' );
 
 add_action( 'init', function() {
 
@@ -34,7 +40,7 @@ add_action( 'init', function() {
 	add_action( 'homepage', 'woo_display_testimonials', 30 );
 	add_action( 'homepage', 'woo_display_popular_posts', 35 );
 	add_action( 'homepage', 'wordsesh_display_attendees', 40 );
-	add_action( 'homepage', 'wordsesh_display_attend', 90 );
+	// add_action( 'homepage', 'wordsesh_display_attend', 90 );
 	add_action( 'homepage', 'wordsesh_display_badges', 95 );
 
 	$speakers_labels = array(

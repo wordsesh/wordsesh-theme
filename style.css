@@ -995,6 +995,7 @@ h2.attendee-count {
 	padding: .1em .5em;
 	font-size: 8px;
 	letter-spacing: .1em;
+	line-height: 1;
 }
 .utc-24-clock {
 	position: relative;

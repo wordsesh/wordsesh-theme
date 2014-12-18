@@ -53,7 +53,7 @@ a.button:hover {
 }
 
 #navigation ul.nav > li.current-menu-item {
-    border-color: transparent;
+    border-color: transparent !important;
 }
 
 #navigation ul.nav > li.current-menu-item:hover {

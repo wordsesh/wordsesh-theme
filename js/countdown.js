@@ -90,6 +90,12 @@
              context.stroke();
 
              $(".hours-val").text(hours);
+			 
+			 if ( $(".hours-val").html() == '1' ) {
+			 	 $(".hours-text").html( 'Hour' );
+			 } else {
+			 	$(".hours-text").html( 'Hours' );
+			 }
          }
 
          function drawMinutes(){
@@ -116,6 +122,12 @@
              context.stroke();
 
              $(".minutes-val").text(minutes);
+			 
+			 if ( $(".minutes-val").html() == '1' ) {
+			 	 $(".minutes-text").html( 'Minute' );
+			 } else {
+			 	 $(".minutes-text").html( 'Minutes' );
+			 }
          }
 
          function drawSeconds(){
@@ -142,6 +154,12 @@
              context.stroke();
 
              $(".seconds-val").text(seconds);
+			 
+			 if ( $(".seconds-val").html() == '1' ) {
+			 	 $(".seconds-text").html( 'Second' );
+			 } else {
+			 	$(".seconds-text").html( 'Seconds' );
+			 }
          }
 
          function drawDays(){
@@ -171,6 +189,8 @@
 			 
 			 if ( $(".days-val").html() == '1' ) {
 			 	 $(".days-text").html( 'Day' );
+			 } else {
+			 	$(".days-text").html( 'Days' );
 			 }
 			 
          }

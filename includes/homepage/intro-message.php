@@ -50,21 +50,21 @@ $settings = woo_get_dynamic_values( $settings );
 					<canvas id="hours" width="148" height="148"></canvas>
 					<div class="info">
 						<p class="hours-val">0</p>
-						<p class="text">Hours</p>
+						<p class="text hours-text">Hours</p>
 					</div>
 				</div>
 				<div class="canvas">
 					<canvas id="minutes" width="148" height="148"></canvas>
 					<div class="info">
 						<p class="minutes-val">0</p>
-						<p class="text">Minutes</p>
+						<p class="text minutes-text">Minutes</p>
 					</div>
 				</div>
 				<div class="canvas last-one">
 					<canvas id="seconds" width="148" height="148"></canvas>
 					<div class="info">
 						<p class="seconds-val">0</p>
-						<p class="text">Seconds</p>
+						<p class="text seconds-text">Seconds</p>
 					</div>
 				</div>
 				<div class="clearfix"></div>

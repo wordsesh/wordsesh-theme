@@ -78,6 +78,14 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 						
 					<?php } ?>
 					
+					<?php
+					$twitter = get_post_meta( get_the_ID(), 'ws_speaker_twitter', true );
+					if ( ! empty( $twitter) ) { ?>
+					
+						<a class="twitter-follow-button" href="https://twitter.com/<?php echo esc_attr( $twitter ); ?>" data-show-count="false" data-lang="en">Follow @<?php echo $twitter; ?></a>
+						
+					<?php } ?>
+					
 				</li>
 
 			<?php endwhile; ?>

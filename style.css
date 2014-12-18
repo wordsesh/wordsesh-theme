@@ -116,7 +116,7 @@ a.button:hover {
 	margin: 0px auto;
 }
 
-.canvas{
+.clock .canvas {
 	float:left;
 	background: url(images/circle-bg.png) top center transparent no-repeat;
 	position: relative;
@@ -126,23 +126,23 @@ a.button:hover {
 	padding-bottom:10px;
 }
 
-.last-one{
+.clock .last-one {
 	margin-right: 0px;
 }
 
-.canvas > div{
+.clock .canvas > div {
 	position: absolute;
 	width: 148px;
 	height: 148px;
 	top: 40px;
 }
 
-.canvas > div > p.text{
+.clock .canvas > div > p.text {
 	font-size: 18px !important;
 	font-weight: normal;
 }
 
-.canvas > div > p {
+.clock .canvas > div > p {
 	margin:0 !important;
 	text-align: center;
 	font-weight: bold;

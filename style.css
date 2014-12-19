@@ -572,7 +572,7 @@ button.button:active,
 }
 
 #schedule .timeline-post .date {
-    font-size: .857em;
+	font: normal 1em/.25em 'Open Sans', arial, sans-serif;
 }
 
 #schedule .timeline-post .title {
@@ -651,6 +651,11 @@ button.button:active,
 		width: 1300px;
 		height: 600px;
 		padding-left: 4.244em;
+	}
+
+	#schedule .section-title {
+		top: 10em;
+		position: relative;
 	}
 
 	#schedule .timeline-post {

@@ -144,7 +144,6 @@ a.button:hover {
 
 .clock .canvas {
 	/* float:left; */
-	background: url(images/circle-bg.png) top center transparent no-repeat;
 	position: relative;
 	width: 148px;
 	height: 148px;

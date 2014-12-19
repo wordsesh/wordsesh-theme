@@ -63,7 +63,7 @@ a.button:hover {
 @media only screen and (min-width: 768px) {
 
     #navigation {
-        width: 50% !important;
+        width: 60% !important;
     }
 
     #navigation .nav a {
@@ -983,14 +983,29 @@ button.button:active,
 }
 
 .live-now {
-    color: rgb(0, 93, 136);
+    color: #df6452;
     text-transform: uppercase;
-    text-shadow: 0px 0px 1px rgb(0, 77, 112), 0px 0px 1px rgb(0, 77, 112);
     font-weight: bold;
     font-family: "Bitter", sans-serif;
     font-size: 16px;
     position: relative;
     top: 1px;
+}
+
+a.live-now {
+	color: #df6452 !important;
+}
+
+a.live-now:hover {
+	color: #fff;
+}
+
+.live-now {
+	display: none;
+}
+
+.current-sesh .live-now {
+	display: inline;
 }
 
 @media only screen and (min-width: 768px) {

@@ -547,7 +547,7 @@ button.button:active,
 
 #schedule .col-full {
     position: relative;
-    min-height: 400px;
+    min-height: 600px;
 }
 
 #schedule .timeline-post {
@@ -868,7 +868,7 @@ button.button:active,
     }
 
     #schedule .timeline-post:nth-child(even) {
-        top: 60% !important;
+        top: 57% !important;
         bottom: auto !important;
     }
 
@@ -885,6 +885,7 @@ button.button:active,
 
 	.jspPane {
 		position: absolute;
+		top: -102px !important;
 	}
 
 	.jspVerticalBar {

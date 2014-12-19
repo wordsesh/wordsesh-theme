@@ -47,6 +47,7 @@ jQuery(document).ready(function($){
 		if ( currentSesh.hasClass( 'current-sesh' ) ) {
 
 		} else {
+			currentSesh.removeClass( 'current-sesh current' );
 			currentSesh.addClass( 'current-sesh current' );
 			api.scrollTo( (300 * h), '');
 		}

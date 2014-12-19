@@ -20,6 +20,8 @@ function wordsesh_is_live() {
 function wordsesh_enqueue_scripts() {
 	wp_enqueue_script( 'countdown', get_stylesheet_directory_uri() . '/js/countdown.js', array( 'jquery' ), false, false );
 	wp_enqueue_script( 'scrollbar', get_stylesheet_directory_uri() . '/js/plugin/jquery.jscrollpane.min.js', array( 'jquery' ), '1.1.0', false );
+	wp_enqueue_script( 'mwheelsupport', get_stylesheet_directory_uri() . '/js/plugin/jquery.mousewheel.js', array( 'jquery' ), '1.1.0', false );
+	wp_enqueue_script( 'mwheelintent', get_stylesheet_directory_uri() . '/js/plugin/mwheelIntent.js', array( 'jquery' ), '1.1.0', false );
 	wp_enqueue_script( 'wordsesh-js', get_stylesheet_directory_uri() . '/js/wordsesh.js', array( 'jquery', 'countdown' ), '1.1.0', false );
 	if ( is_front_page() ) {
 		wp_enqueue_script( 'utc-clock', get_stylesheet_directory_uri() . '/includes/homepage/js/clock.js', array( 'jquery' ), '1.1.0', true );

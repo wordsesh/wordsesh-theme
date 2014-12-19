@@ -650,6 +650,7 @@ button.button:active,
 		max-width: none;
 		width: 1300px;
 		height: 600px;
+		padding-left: 4.244em;
 	}
 
 	#schedule .timeline-post {

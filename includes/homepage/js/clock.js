@@ -41,17 +41,18 @@ jQuery(document).ready(function($){
 			clock.css( 'marginLeft', offset + 'px' );
 		}
 
-		var currentSesh = jQuery('#schedule').find("[data-utctime='" + h + "']");
-		var api = jQuery('#schedule').data('jsp');
+		if ( 20 === d.getDate() ) {
+			var currentSesh = jQuery('#schedule').find("[data-utctime='" + h + "']");
+			var api = jQuery('#schedule').data('jsp');
 
-		if ( currentSesh.hasClass( 'current-sesh' ) ) {
+			if ( currentSesh.hasClass( 'current-sesh' ) ) {
 
-		} else {
-			currentSesh.removeClass( 'current-sesh current' );
-			currentSesh.addClass( 'current-sesh current' );
-			api.scrollTo( (300 * h), '');
+			} else {
+				jQuery('#schedule .timeline-post').removeClass( 'current-sesh current' );
+				currentSesh.addClass( 'current-sesh current' );
+				api.scrollTo( (300 * h), '');
+			}
 		}
-
 
     }, 1000)
 

@@ -544,6 +544,7 @@ button.button:active,
     background: #dedede;
 }
 
+
 #schedule .col-full {
     position: relative;
     min-height: 400px;
@@ -584,8 +585,6 @@ button.button:active,
 #schedule .timeline-post:hover {
     text-decoration: none;
     background: #cccccc;
-    box-shadow: 0 0 10px 0 #83efff;
-    -webkit-box-shadow: 0 0 10px 0 #83efff;
     top: -0.53em;
 }
 
@@ -629,6 +628,7 @@ button.button:active,
     background-color: #ff9d83;
 }
 
+
 @media only screen and (min-width: 768px) {
 
 	#schedule {
@@ -644,6 +644,12 @@ button.button:active,
 	    left: 0;
 	    top: 55%;
 	    background: #dedede;
+	}
+
+	#schedule .wrapper {
+		max-width: none;
+		width: 1300px;
+		height: 600px;
 	}
 
 	#schedule .timeline-post {
@@ -713,11 +719,7 @@ button.button:active,
 	    width: auto;
 	    margin-left: -1.5em;
 	    margin-bottom: 4em;
-	    margin-right: -1.5em;
-	    -webkit-box-shadow: 0px 0px 5px 0px rgba(150, 150, 150, .75);
-	    -moz-box-shadow: 0px 0px 5px 0px rgba(150, 150, 150, .75);
-	    box-shadow: 0px 0px 5px 0px rgba(150, 150, 150, .75);
-	    background: #3da2d0;
+	    background: #FF9D83;
 	    color: #fff;
 	}
 
@@ -759,103 +761,103 @@ button.button:active,
         margin-right: 0;
     }
 
-    #schedule .timeline-post-1 {
+    #schedule #timeline-post-1 {
         left: -6900px !important;
     }
 
-    #schedule .timeline-post-2 {
+    #schedule #timeline-post-2 {
         left: -6600px !important;
     }
 
-    #schedule .timeline-post-3 {
+    #schedule #timeline-post-3 {
         left: -6300px !important;
     }
 
-    #schedule .timeline-post-4 {
+    #schedule #timeline-post-4 {
         left: -6000px !important;
     }
 
-    #schedule .timeline-post-5 {
+    #schedule #timeline-post-5 {
         left: -5700px !important;
     }
 
-    #schedule .timeline-post-6 {
+    #schedule #timeline-post-6 {
         left: -5400px !important;
     }
 
-    #schedule .timeline-post-7 {
+    #schedule #timeline-post-7 {
         left: -5100px !important;
     }
 
-    #schedule .timeline-post-8 {
+    #schedule #timeline-post-8 {
         left: -4800px !important;
     }
 
-    #schedule .timeline-post-9 {
+    #schedule #timeline-post-9 {
         left: -4500px !important;
     }
 
-    #schedule .timeline-post-10 {
+    #schedule #timeline-post-10 {
         left: -4200px !important;
     }
 
-    #schedule .timeline-post-11 {
+    #schedule #timeline-post-11 {
         left: -3900px !important;
     }
 
-    #schedule .timeline-post-12 {
+    #schedule #timeline-post-12 {
         left: -3600px !important;
     }
 
-    #schedule .timeline-post-13 {
+    #schedule #timeline-post-13 {
         left: -3300px !important;
     }
 
-    #schedule .timeline-post-14 {
+    #schedule #timeline-post-14 {
         left: -3000px !important;
     }
 
-    #schedule .timeline-post-15 {
+    #schedule #timeline-post-15 {
         left: -2700px !important;
     }
 
-    #schedule .timeline-post-16 {
+    #schedule #timeline-post-16 {
         left: -2400px !important;
     }
 
-    #schedule .timeline-post-17 {
+    #schedule #timeline-post-17 {
         left: -2100px !important;
     }
 
-    #schedule .timeline-post-18 {
+    #schedule #timeline-post-18 {
         left: -1800px !important;
     }
 
-    #schedule .timeline-post-19 {
+    #schedule #timeline-post-19 {
         left: -1500px !important;
     }
 
-    #schedule .timeline-post-20 {
+    #schedule #timeline-post-20 {
         left: -1200px !important;
     }
 
-    #schedule .timeline-post-21 {
+    #schedule #timeline-post-21 {
         left: -900px !important;
     }
 
-    #schedule .timeline-post-22 {
+    #schedule #timeline-post-22 {
         left: -600px !important;
     }
 
-    #schedule .timeline-post-23 {
+    #schedule #timeline-post-23 {
         left: -300px !important;
     }
 
-    #schedule .timeline-post-24 {
+    #schedule #timeline-post-24 {
         left: 0px !important;
     }
 
-    #schedule .timeline-post-25 {
+    #schedule #timeline-post-25 {
         left: 300px !important;
     }
 
@@ -874,10 +876,95 @@ button.button:active,
         position: absolute;
         top: 40%;
     }
+
+	.jspContainer {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.jspPane {
+		position: absolute;
+	}
+
+	.jspVerticalBar {
+		display: none;
+	}
+
+	.jspHorizontalBar {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 16px;
+		background: red;
+	}
+
+	.jspCap {
+		display: none;
+	}
+
+	.jspHorizontalBar .jspCap {
+		float: left;
+	}
+
+	.jspTrack {
+		background: #e5e5e5;
+		position: relative;
+	}
+
+	.jspDrag {
+		background: #2d8c73;
+		position: relative;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+	}
+
+	.jspHorizontalBar .jspTrack,
+	.jspHorizontalBar .jspDrag {
+		float: left;
+		height: 100%;
+	}
+
+	.jspArrow {
+		background: #11332A;
+		text-indent: -20000px;
+		display: block;
+		cursor: pointer;
+		padding: 0;
+		margin: 0;
+	}
+
+	.jspArrow.jspDisabled {
+		cursor: default;
+		background: #637671;
+	}
+
+	.jspHorizontalBar .jspArrow {
+		width: 16px;
+		float: left;
+		height: 100%;
+	}
+
+	.jspVerticalBar .jspArrow:focus {
+		outline: none;
+	}
+
+	.jspCorner {
+		background: #eeeef4;
+		float: left;
+		height: 100%;
+	}
+
+	/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+	* html .jspCorner {
+		margin: 0 -3px 0 0;
+	}
+
 }
 
 #schedule .timeline-post.current:before {
-    border-color: #3da2d0 transparent transparent transparent !important;
+    border-color: #FF9D83 transparent transparent transparent !important;
 }
 
 #schedule .timeline-post.current:nth-child(2n) {
@@ -886,11 +973,11 @@ button.button:active,
 }
 
 #schedule .timeline-post.current:nth-child(2n):before {
-    border-color: transparent transparent #3da2d0 transparent !important;
+    border-color: transparent transparent #FF9D83 transparent !important;
 }
 
 #schedule .timeline-post.current:nth-child(1n):after {
-    background: #3da2d0;
+    background: #FF9D83;
 }
 
 .live-now {

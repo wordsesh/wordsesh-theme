@@ -24,7 +24,7 @@
 
 					$utc_hour = absint($count - 1); ?>
 
-			    	<div class="timeline-post timeline-post-<?php echo $count; ?>" data-utctime="<?php echo sprintf( "%02u", $utc_hour ); ?>">
+			    	<div id="timeline-post-<?php echo $count; ?>" class="timeline-post" data-utctime="<?php echo sprintf( "%02u", $utc_hour ); ?>">
 
 						<?php
 						if ( $wordsesh_time_slot = get_post_meta( get_the_ID(), 'wordsesh_time', true ) ) :

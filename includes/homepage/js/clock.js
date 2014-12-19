@@ -40,6 +40,18 @@ jQuery(document).ready(function($){
        		offset = '-50' * h;
 			clock.css( 'marginLeft', offset + 'px' );
 		}
+
+		var currentSesh = jQuery('#schedule').find("[data-utctime='" + h + "']");
+		var api = jQuery('#schedule').data('jsp');
+
+		if ( currentSesh.hasClass( 'current-sesh' ) ) {
+
+		} else {
+			currentSesh.addClass( 'current-sesh current' );
+			api.scrollTo( (300 * h), '');
+		}
+
+
     }, 1000)
 
 

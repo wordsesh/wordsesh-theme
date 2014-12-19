@@ -6,8 +6,6 @@ function woo_load_frontend_css () {
 	wp_register_style( 'woo-layout', get_template_directory_uri() . '/css/layout.css' );
 	wp_enqueue_style( 'theme-stylesheet' );
 	wp_enqueue_style( 'woo-layout' );
-
-	wp_enqueue_script( 'script-name', get_stylesheet_directory_uri() . '/includes/homepage/js/clock.js', array( 'jquery' ), '1.0.0', true );
 }
 
 function wordsesh_is_live() {
@@ -21,7 +19,11 @@ function wordsesh_is_live() {
 
 function wordsesh_enqueue_scripts() {
 	wp_enqueue_script( 'countdown', get_stylesheet_directory_uri() . '/js/countdown.js', array( 'jquery' ), false, false );
+	wp_enqueue_script( 'scrollbar', get_stylesheet_directory_uri() . '/js/plugin/jquery.jscrollpane.min.js', array( 'jquery' ), false, false );
 	wp_enqueue_script( 'wordsesh-js', get_stylesheet_directory_uri() . '/js/wordsesh.js', array( 'jquery', 'countdown' ), false, false );
+	if ( is_front_page() ) {
+		wp_enqueue_script( 'utc-clock', get_stylesheet_directory_uri() . '/includes/homepage/js/clock.js', array( 'jquery' ), '1.0.0', true );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'wordsesh_enqueue_scripts' );
 

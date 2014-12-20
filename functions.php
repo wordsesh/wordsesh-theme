@@ -9,7 +9,7 @@ function woo_load_frontend_css () {
 }
 
 function wordsesh_is_live() {
-	$wordsesh_live = 0;
+	$wordsesh_live = 1;
 	if ( $wordsesh_live == 1 ) {
 		return true;
 	} else {

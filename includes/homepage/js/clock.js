@@ -42,7 +42,8 @@ jQuery(document).ready(function($){
 		}
 
 		if ( 20 === d.getDate() ) {
-			var currentSesh = jQuery('#schedule').find("[data-utctime='" + h + "']");
+
+			var currentSesh = jQuery('#schedule').find("[data-utctime='" + doubleDigitIt( h ) + "']");
 			var api = jQuery('#schedule').data('jsp');
 
 			if ( currentSesh.hasClass( 'current-sesh' ) ) {
@@ -56,5 +57,13 @@ jQuery(document).ready(function($){
 
     }, 1000)
 
+
+	function doubleDigitIt( n ) {
+		var output = n + '';
+		while (output.length < 2) {
+			output = '0' + output;
+		}
+		return output;
+	}
 
 });

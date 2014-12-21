@@ -31,6 +31,10 @@ $settings = woo_get_dynamic_values( $settings );
 		<?php endif; ?>
 		
 		<?php if ( wordsesh_is_live() ) : ?>
+
+			<?php if ( ( '' != $settings['homepage_intro_message_button_label'] ) && ( '' != $settings['homepage_intro_message_button_url'] ) ): ?>
+				<a class="button" href="<?php echo esc_url( $settings['homepage_intro_message_button_url'] ); ?>"><?php echo esc_attr( $settings['homepage_intro_message_button_label'] ); ?></a>
+			<?php endif; ?>
 			
 		<?php else : ?>
 			

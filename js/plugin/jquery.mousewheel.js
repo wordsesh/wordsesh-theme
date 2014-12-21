@@ -3,7 +3,7 @@
  *
  * Version: 3.1.9
  *
- * Requires: jQuery 1.2.2+
+ * Requires: jQuery 1.3.0+
  */
 
 (function (factory) {

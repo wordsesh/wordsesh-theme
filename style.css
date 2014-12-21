@@ -13,7 +13,7 @@
 @import url('../hub/style.css');
 
 #siteground {
-    background: url( 'red-tile.png') repeat scroll 0 0 transparent;
+    background: #098a87;
 }
 
 .sg-inner {
@@ -33,7 +33,7 @@
 }
 
 .sg-inner span {
-    color: #fffb61;
+    color: #ffff42;
 }
 
 #header-wrapper {

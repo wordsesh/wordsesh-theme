@@ -233,7 +233,7 @@ function ws_add_siteground_banner() { ?>
 
 		<div class="sg-inner">
 
-			<p><a href="http://www.siteground.com/wordpress-hosting.htm?afcode=d51dfdb812d1d9c0658730e48939225c" target="_blank">WordSesh is powered by SiteGround. Check out their <span>60% OFF SPECIAL DEAL</span>!</a></p>
+			<p><a href="http://wpsessions.com/wordsesh/?ref=183" target="_blank">Like WordSesh? Then check out WPSessions. It's like a small WordSesh <span>every month!</span></a></p>
 
 		</div>
 

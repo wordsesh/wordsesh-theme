@@ -110,7 +110,7 @@ a.button:hover {
 }
 
 #intro-message h2 {
-    background: url('ws-logo-claus-sprite.png') no-repeat scroll 0 0 transparent;
+    background: url('ws-logo-sprite.png') no-repeat scroll 0 0 transparent;
     height: 446px;
     width: 350px;
     margin: 0 auto;

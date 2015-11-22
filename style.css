@@ -111,8 +111,8 @@ a.button:hover {
 
 #intro-message h2 {
     background: url('ws-logo-sprite.png') no-repeat scroll 0 0 transparent;
-    height: 446px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     margin: 0 auto;
     text-indent: -9999px;
     text-transform: capitalize;
@@ -120,7 +120,7 @@ a.button:hover {
 }
 
 #intro-message h2:hover {
-    background-position: -350px 0;
+    background-position: -300px 0;
 }
 
 #intro-message .wrapper {

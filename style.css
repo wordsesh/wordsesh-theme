@@ -5,7 +5,7 @@
  Author:         WooThemes
  Author URI:     http://woothemes.com/
  Template:       hub
- Version:        1.3.0
+ Version:        1.3.2
 */
 
 /* =Imports styles from the parent theme
@@ -13,16 +13,24 @@
 @import url('../hub/style.css');
 
 #siteground {
-    background: #098a87;
+    background: #e24d1f;
 }
 
 .sg-inner {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: light;
+    font-size: 16px;
     text-align: center;
     line-height: 24px;
-    padding: 1em;
+    padding: 1.4em 0 1.6em;
+}
+
+.sg-inner p.title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	padding: 4px 12px;
 }
 
 .sg-inner p,
@@ -33,7 +41,14 @@
 }
 
 .sg-inner span {
-    color: #ffff42;
+		font-weight: bold;
+}
+
+.sg-inner img {
+	-webkit-transform: none !important;
+	transform: none !important;
+	width: 50px;
+	vertical-align: middle;
 }
 
 #header-wrapper {

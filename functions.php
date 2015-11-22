@@ -2,7 +2,7 @@
 
 function woo_load_frontend_css () {
 	$ver = time();
-	wp_register_style( 'theme-stylesheet', get_stylesheet_uri(), false, '1.3.0' );
+	wp_register_style( 'theme-stylesheet', get_stylesheet_uri(), false, '1.3.2' );
 	wp_register_style( 'woo-layout', get_template_directory_uri() . '/css/layout.css' );
 	wp_enqueue_style( 'theme-stylesheet' );
 	wp_enqueue_style( 'woo-layout' );
@@ -215,12 +215,12 @@ function ws_add_attendee( $entry, $form ){
 
 }
 
-function get_avatar_url( $author_id, $size ) {
-    $get_avatar = get_avatar( $author_id, $size );
-    preg_match( "/src='(.*?)'/i", $get_avatar, $matches );
-    return ( $matches[1] );
-}
-add_action( 'gform_after_submission', 'ws_add_attendee', 10, 2 );
+// function get_avatar_url( $author_id, $size ) {
+//     $get_avatar = get_avatar( $author_id, $size );
+//     preg_match( "/src='(.*?)'/i", $get_avatar, $matches );
+//     return ( $matches[1] );
+// }
+// add_action( 'gform_after_submission', 'ws_add_attendee', 10, 2 );
 
 function ws_add_google_fonts () { ?>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -233,7 +233,9 @@ function ws_add_siteground_banner() { ?>
 
 		<div class="sg-inner">
 
-			<p><a href="http://wpsessions.com/wordsesh/?ref=183" target="_blank">Like WordSesh? Then check out WPSessions. It's like a small WordSesh <span>every month!</span></a></p>
+			<p class="title"><a href="https://feelingrestful.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/restful-logo.png" /> A Day of REST</a></p>
+			<p>Learn about the <a href="http://wp-api.org/" target="_blank"><span>WordPress REST API</span></a> from the team building it and the people using it.</p>
+			<p><a href="https://feelingrestful.com/" target="_blank">28th January 2016, Conway Hall, London</a></p>
 
 		</div>
 
